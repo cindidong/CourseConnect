@@ -1,13 +1,13 @@
 import React from 'react';
-import NavBar from './NavBar.jsx'
-import ReviewsSideBar from './reviewPage/ReviewsSideBar'
+import ReviewFinal from './reviewPage/ReviewFinal'
+import SignIn from './SignIn.jsx'
+import SignUp from './SignUp.jsx'
+import Home from './homePage/Home.jsx'
+
+var isLoggedIn = false;
 
 function App(){
-    return(
-    <div>
-    <NavBar />
-    <ReviewsSideBar />
-    </div>);
+    return(<div>{isLoggedIn ? <ReviewFinal /> : <SignIn />}</div>);
 }
 
 export default App;
