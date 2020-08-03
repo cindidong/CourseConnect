@@ -6,7 +6,7 @@ function App(){
     return(
     <div>
     <NavBar />
-    <ReviewsSideBar name="Cindi"/>
+    <ReviewsSideBar />
     </div>);
 }
 
