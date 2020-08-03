@@ -7,7 +7,7 @@ function ReviewTop(props) {
             <table cellSpacing = "20">
                 <tr>
                     <td>
-                        <div className="review-rating-icon">
+                        <div className="review-rating-icon" style={{backgroundColor: props.color}}>
                         <h1>{props.overallRating}</h1>
                         </div>
                     </td>

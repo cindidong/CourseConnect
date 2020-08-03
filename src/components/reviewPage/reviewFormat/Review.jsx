@@ -5,19 +5,6 @@ import './Review.css';
 
 
 function Review(props) {
-    var color = "";
-    if (parseInt(props.overallRating) > 3.9)
-    {
-        color = "green";
-    }
-    else if (parseInt(props.overallRating) < 2.5)
-    {
-        color = "yellow";
-    }
-    else
-    {
-        color = "red";
-    }
     return (
     <div>
     <ReviewTop 
@@ -28,6 +15,7 @@ function Review(props) {
         takeAgain={props.takeAgain}
         materials={props.materials}
         time={props.time}
+        color={props.color}
     />
     <ReviewMiddle 
         paragraph={props.paragraph}
