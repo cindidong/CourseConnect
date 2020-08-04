@@ -58,5 +58,9 @@ h1 {
   .title
   {
     color: green;
-    size: 40px;
+    size: 70px;
+  }
+
+  .review-topRight {
+    text-align: right;
   }

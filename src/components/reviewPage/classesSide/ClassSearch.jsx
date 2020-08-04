@@ -9,15 +9,8 @@ import FormControl from 'react-bootstrap/FormControl'
 function ClassSearch(){
     return(
         <div>
-        <Row>
-            <Col>
-                <Form inline>
-                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                <Button variant="outline-success">Search</Button>
-          </Form>
-            </Col>
-        </Row>
-      </div>);
+            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+        </div>);
   }
   
   export default ClassSearch;
