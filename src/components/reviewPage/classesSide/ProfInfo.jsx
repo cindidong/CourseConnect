@@ -20,14 +20,13 @@ function alertClicked() {
 
 function ProfInfo(){
     return(
-        <div style={{overflowX : 'auto',fontSize: '14px'}}>
+        <div>
         <ListGroup defaultActiveKey="#link1">
             <ListGroup.Item action onClick={alertClicked}>
                 <Media>
                 <Media.Body>
                     <h5>Name of Prof</h5>
                     <h5>Class</h5>
-                    <p>Tags</p>
                 </Media.Body>
                 <p>rating</p>
                 </Media>
@@ -37,7 +36,6 @@ function ProfInfo(){
                 <Media.Body>
                     <h5>Name of Prof</h5>
                     <h5>Class</h5>
-                    <p>Tags</p>
                 </Media.Body>
                 <p>rating</p>
                 </Media>
@@ -45,11 +43,10 @@ function ProfInfo(){
             <ListGroup.Item action onClick={alertClicked}>
                 <Media>
                 <Media.Body>
-                    <h5>Name of Prof</h5>
+                    <h4>Name of Prof</h4>
                     <h5>Class</h5>
-                    <p>Tags</p>
                 </Media.Body>
-                <p>rating</p>
+                <p>4.5</p>
                 </Media>
             </ListGroup.Item>
         </ListGroup>

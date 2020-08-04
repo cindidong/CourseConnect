@@ -12,6 +12,7 @@ function Review(props) {
     {/*
     <ReviewTop 
         overallRating={props.overallRating}
+        prof={props.prof}
         taken={props.taken}
         submitted={props.submitted}
         grade={props.grade}

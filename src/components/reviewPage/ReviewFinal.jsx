@@ -7,7 +7,7 @@ import SplitPane, { Pane } from 'react-split-pane';
 function ReviewFinal(){
     return(
       <div>
-        <SplitPane split="horizontal" minSize={60}>
+        <SplitPane split="horizontal" minSize={100}>
           <div>
             <NavBar />
           </div>
@@ -17,7 +17,7 @@ function ReviewFinal(){
                   <ClassesSideBar/>
               </div>
               <div className="Pane2">
-                <ReviewsSideBar />
+                <ReviewsSideBar/>
               </div>
             </SplitPane>
           </div>
