@@ -3,11 +3,12 @@ import ReviewsSideBar from './ReviewsSideBar.jsx';
 import NavBar from '../NavBar.jsx'
 import ClassesSideBar from './ClassesSideBar.jsx'
 import SplitPane, { Pane } from 'react-split-pane';
+import SummaryReview from './summaryReview/SummaryReview.jsx'
 
 function ReviewFinal(){
     return(
       <div>
-        <SplitPane split="horizontal" minSize={100}>
+        <SplitPane split="horizontal" minSize={70}>
           <div>
             <NavBar />
           </div>
@@ -17,6 +18,7 @@ function ReviewFinal(){
                   <ClassesSideBar/>
               </div>
               <div className="Pane2">
+                <SummaryReview/>
                 <ReviewsSideBar/>
               </div>
             </SplitPane>
