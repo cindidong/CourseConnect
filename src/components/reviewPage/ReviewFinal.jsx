@@ -8,18 +8,20 @@ import SummaryReview from './summaryReview/SummaryReview.jsx'
 function ReviewFinal(){
     return(
       <div>
-        <SplitPane split="horizontal" minSize={70}>
+        <SplitPane split="horizontal" minSize={70} paneStyle={{overflow: "auto"}}>
           <div>
             <NavBar />
           </div>
           <div>
-            <SplitPane split="vertical" defaultSize={1000} primary="second">
+            <SplitPane split="vertical" defaultSize={1000} primary="second" paneStyle={{overflow: "auto"}}>
               <div className="Pane1">
                   <ClassesSideBar/>
               </div>
               <div className="Pane2">
-                <SummaryReview/>
-                <ReviewsSideBar/>
+                <SummaryReview prof="nachenberg"/>
+                <ReviewsSideBar 
+                  prof="nachenberg"
+                />
               </div>
             </SplitPane>
           </div>

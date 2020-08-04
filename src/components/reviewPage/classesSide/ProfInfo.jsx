@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -14,36 +14,39 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
-function alertClicked() {
-    alert('You clicked the ListGroupItem');
-  }
 
-function ProfInfo(){
+
+function ProfInfo(props){
+    //const [isClicked, setIsClicked] = useState(true);
+    function handleClick() {
+        alert('You clicked the ListGroupItem');
+      }
+      
     return(
         <div>
         <ListGroup defaultActiveKey="#link1">
-            <ListGroup.Item action onClick={alertClicked}>
+            <ListGroup.Item action onClick={handleClick}>
                 <Media>
                 <Media.Body>
-                    <h5>Name of Prof</h5>
+                    <h5>nachenberg</h5>
                     <h5>Class</h5>
                 </Media.Body>
                 <p>rating</p>
                 </Media>
             </ListGroup.Item>
-            <ListGroup.Item action onClick={alertClicked}>
+            <ListGroup.Item action onClick={handleClick}>
                 <Media>
                 <Media.Body>
-                    <h5>Name of Prof</h5>
+                    <h5>stahl</h5>
                     <h5>Class</h5>
                 </Media.Body>
                 <p>rating</p>
                 </Media>
             </ListGroup.Item>
-            <ListGroup.Item action onClick={alertClicked}>
+            <ListGroup.Item action onClick={handleClick}>
                 <Media>
                 <Media.Body>
-                    <h4>Name of Prof</h4>
+                    <h4>eggert</h4>
                     <h5>Class</h5>
                 </Media.Body>
                 <p>4.5</p>

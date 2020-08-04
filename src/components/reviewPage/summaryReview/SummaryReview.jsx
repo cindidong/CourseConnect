@@ -6,14 +6,16 @@ import ReviewButtons from './ReviewButtons.jsx'
 import Box from '@material-ui/core/Box';
 
 
-function SummaryReview(){
+function SummaryReview(props){
     return(
         <div>
         <Box display="flex" p={1} width="100%">
             <div style={{ width: '60%' }}>
                 <Box display="flex" p={1} flexWrap="wrap" width="100%">
                         <Box p={1}>
-                            <TitleOfProf/>
+                            <TitleOfProf
+                                prof={props.prof}
+                            />
                         </Box>
                         <Box p={1} flexGrow={1}>
                             <ReviewButtons/>

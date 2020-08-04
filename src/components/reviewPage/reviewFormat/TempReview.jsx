@@ -14,37 +14,28 @@ function TempReview(props) {
         <Card.Body>
         <Box display="flex" width="100%">
             <Box p={1} flexGrow={1}>
-            <div className="title">
-                <Card.Title>3.8</Card.Title>
+            <div className="title" style={{color: props.color, size: "70px"}}>
+                <Card.Title>{props.overallRating}</Card.Title>
             </div>
             </Box>
             <Box p={1}>
-                <div className = "review-topRight">
+                <div className = "review-topRight" style={{textAlign: "right"}}>
                 <Card.Subtitle className="mb-2 text-muted">
-                    Quarter Taken: Fall 2018
+                    Quarter Taken: {props.taken}
                 </Card.Subtitle>
                 <Card.Subtitle className="mb-2 text-muted">
-                    Date Submitted: January 7th, 2019
+                    Date Submitted: {props.submitted}
                 </Card.Subtitle>
                 </div>
             </Box>
         </Box>
-            <Card.Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. HOWARD STAHL SMELLS LIKE EGGS Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </Card.Text>
+            <Card.Text>{props.paragraph}</Card.Text>
             <div>
                 <Box display="flex" flexWrap="wrap">
-                    <Chip label="Hard Class Easy Teacher" variant="outlined" />
-                    <Chip label="Textbook" variant="outlined" />
-                    <Chip label="Take Again" variant="outlined" />
-                    <Chip label="Lots of Time" variant="outlined" />
-                    <Chip label="Hard Class Easy Teacher" variant="outlined" />
-                    <Chip label="Hard Class Easy Teacher" variant="outlined" />
-                    <Chip label="Hard Class Easy Teacher" variant="outlined" />
-                    <Chip label="Hard Class Easy Teacher" variant="outlined" />
-                    <Chip label="Hard Class Easy Teacher" variant="outlined" />
-                    <Chip label="Hard Class Easy Teacher" variant="outlined" />
-                    <Chip label="Hard Class Easy Teacher" variant="outlined" />
+                    <Chip label="Grade: {props.grade}" variant="outlined" />
+                    <Chip label="Would Take Again: {props.takeAgain}" variant="outlined" />
+                    <Chip label="Materials: {props.materials}" variant="outlined" />
+                    <Chip label="Time Commitment: {props.time}" variant="outlined" />
                     <Chip label="Hard Class Easy Teacher" variant="outlined" />
                 </Box>
             </div>

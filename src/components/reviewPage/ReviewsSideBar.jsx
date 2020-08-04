@@ -18,10 +18,13 @@ function colorSelector(rating){
 }
 
 
-function ReviewsSideBar(){
+function ReviewsSideBar(props){
+  const result = reviewData.filter((data) => {
+      return data.prof === props.prof;
+  });
   return(
   <div>
-  <p>{reviewData.map( x => 
+  <p>{result.map( x => 
     (<Review
         key={x.id}
         prof={x.prof}
