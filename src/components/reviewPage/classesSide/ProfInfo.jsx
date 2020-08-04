@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -15,41 +15,35 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
 
-
 function ProfInfo(props){
-    //const [isClicked, setIsClicked] = useState(true);
-    function handleClick() {
-        alert('You clicked the ListGroupItem');
-      }
-      
     return(
         <div>
         <ListGroup defaultActiveKey="#link1">
-            <ListGroup.Item action onClick={handleClick}>
+            <ListGroup.Item action onClick={() => {props.changeProfName("nachenberg")}}>
                 <Media>
                 <Media.Body>
                     <h5>nachenberg</h5>
                     <h5>Class</h5>
                 </Media.Body>
-                <p>rating</p>
+                <p>4.5</p>
                 </Media>
             </ListGroup.Item>
-            <ListGroup.Item action onClick={handleClick}>
+            <ListGroup.Item action onClick={() => {props.changeProfName("stahl")}}>
                 <Media>
                 <Media.Body>
                     <h5>stahl</h5>
                     <h5>Class</h5>
                 </Media.Body>
-                <p>rating</p>
+                <p>3.5</p>
                 </Media>
             </ListGroup.Item>
-            <ListGroup.Item action onClick={handleClick}>
+            <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
                 <Media>
                 <Media.Body>
                     <h4>eggert</h4>
                     <h5>Class</h5>
                 </Media.Body>
-                <p>4.5</p>
+                <p>3.5</p>
                 </Media>
             </ListGroup.Item>
         </ListGroup>
