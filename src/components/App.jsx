@@ -2,12 +2,15 @@ import React from 'react';
 import ReviewFinal from './reviewPage/ReviewFinal'
 import SignIn from './SignIn.jsx'
 import SignUp from './SignUp.jsx'
-import Home from './homePage/Home.jsx'
+import ClassesSideBar from './reviewPage/ClassesSideBar.jsx'
+import TempReview from './reviewPage/reviewFormat/TempReview'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 var isLoggedIn = false;
 
 function App(){
-    return(<div>{isLoggedIn ? <ReviewFinal /> : <SignIn />}</div>);
+    return(<div>{isLoggedIn ? <ReviewFinal /> : <ReviewFinal />}</div>);
 }
 
 export default App;

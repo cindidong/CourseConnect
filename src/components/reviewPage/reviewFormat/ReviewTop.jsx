@@ -4,7 +4,7 @@ import './Review.css';
 function ReviewTop(props) {
     return (
         <div className="review-top-container">
-            <table cellSpacing = "20">
+            <table cellSpacing = "0">
                 <tr>
                     <td>
                         <div className="review-rating-icon" style={{backgroundColor: props.color}}>

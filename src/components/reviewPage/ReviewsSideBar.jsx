@@ -24,6 +24,7 @@ function ReviewsSideBar(){
   <p>{reviewData.map( x => 
     (<Review
         key={x.id}
+        prof={x.prof}
         overallRating={x.overallRating}
         taken={x.taken}
         submitted={x.submitted}

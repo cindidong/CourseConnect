@@ -1,12 +1,15 @@
 import React from 'react';
 import ReviewTop from './ReviewTop.jsx'
 import ReviewMiddle from './ReviewMiddle.jsx';
+import ReviewBottom from './ReviewBottom.jsx';
+import TempReview from './TempReview.jsx';
 import './Review.css';
 
 
 function Review(props) {
     return (
     <div>
+    {/*
     <ReviewTop 
         overallRating={props.overallRating}
         taken={props.taken}
@@ -19,7 +22,8 @@ function Review(props) {
     />
     <ReviewMiddle 
         paragraph={props.paragraph}
-    />
+    />*/}
+    <TempReview/>
     </div>);
 }
 
