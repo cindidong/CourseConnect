@@ -55,3 +55,8 @@ h1 {
   .rating {
     color: green;
   }
+  .title
+  {
+    color: green;
+    size: 40px;
+  }

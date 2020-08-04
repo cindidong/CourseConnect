@@ -24,5 +24,4 @@ function ReviewFinal(){
         </SplitPane>
       </div>);
   }
-  
   export default ReviewFinal;
