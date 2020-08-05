@@ -20,18 +20,33 @@ const useStyles = makeStyles((theme) => ({
 function HomeSchool(props){
     const classes = useStyles();
     const [school, setSchool] = useState('UCLA');
-    const [state, setState] = React.useState({
+    const [state, setState] = useState({
         school: '',
         name: 'hai',
     });
 
-    const handleChange = (event) => {
-        const name = event.target.name;
+    function handleChange(event) {
+      const { name, value } = event.target;
+        var notNull = true;
+        if (value=="")
+        {
+          notNull = false;
+        }
         setState({
         ...state,
-        [name]: event.target.value,
+        [school]: value,
+        [name]: value,
         });
-        setSchool(event.target.value);
+        setSchool((prev) => {
+          if (notNull)
+          {
+            return value;
+          }
+          else
+          {
+            return prev;
+          }
+        })
     };
 
     return(

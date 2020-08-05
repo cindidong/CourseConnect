@@ -1,5 +1,6 @@
 import React from 'react';
 import ReviewFinal from './reviewPage/ReviewFinal'
+import Home from './homePage/Home.jsx'
 import SignUp from './SignUp.jsx'
 import ReactDOM from 'react-dom';
 import Avatar from '@material-ui/core/Avatar';
@@ -89,7 +90,7 @@ export default function SignIn() {
             label="Remember me"
           />
           <Button 
-            onClick={() => { return(ReactDOM.render(<ReviewFinal />, document.getElementById('root'))) }}
+            onClick={() => { return(ReactDOM.render(<Home />, document.getElementById('root'))) }}
             type="submit"
             fullWidth
             variant="contained"
