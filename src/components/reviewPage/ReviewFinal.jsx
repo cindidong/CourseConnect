@@ -13,24 +13,18 @@ function ReviewFinal(){
   }
     return(
       <div>
-        <SplitPane split="horizontal" minSize={70} paneStyle={{overflow: "auto"}}>
-          <div>
-            <NavBar />
+        <NavBar />
+        <SplitPane split="vertical" defaultSize={1000} primary="second" paneStyle={{overflow: "auto"}}>
+          <div className="Pane1">
+              <ClassesSideBar
+                changeProfName={changeProfName}
+              />
           </div>
-          <div>
-            <SplitPane split="vertical" defaultSize={1000} primary="second" paneStyle={{overflow: "auto"}}>
-              <div className="Pane1">
-                  <ClassesSideBar
-                    changeProfName={changeProfName}
-                  />
-              </div>
-              <div className="Pane2">
-                <SummaryReview prof={newName}/>
-                <ReviewsSideBar 
-                  prof={newName}
-                />
-              </div>
-            </SplitPane>
+          <div className="Pane2">
+            <SummaryReview prof={newName}/>
+            <ReviewsSideBar 
+              prof={newName}
+            />
           </div>
         </SplitPane>
       </div>);

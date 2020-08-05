@@ -46,6 +46,69 @@ function ProfInfo(props){
                 <p>3.5</p>
                 </Media>
             </ListGroup.Item>
+            <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
+                <Media>
+                <Media.Body>
+                    <h4>eggert</h4>
+                    <h5>Class</h5>
+                </Media.Body>
+                <p>3.5</p>
+                </Media>
+            </ListGroup.Item>
+            <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
+                <Media>
+                <Media.Body>
+                    <h4>eggert</h4>
+                    <h5>Class</h5>
+                </Media.Body>
+                <p>3.5</p>
+                </Media>
+            </ListGroup.Item>
+            <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
+                <Media>
+                <Media.Body>
+                    <h4>eggert</h4>
+                    <h5>Class</h5>
+                </Media.Body>
+                <p>3.5</p>
+                </Media>
+            </ListGroup.Item>
+            <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
+                <Media>
+                <Media.Body>
+                    <h4>eggert</h4>
+                    <h5>Class</h5>
+                </Media.Body>
+                <p>3.5</p>
+                </Media>
+            </ListGroup.Item>
+            <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
+                <Media>
+                <Media.Body>
+                    <h4>eggert</h4>
+                    <h5>Class</h5>
+                </Media.Body>
+                <p>3.5</p>
+                </Media>
+            </ListGroup.Item>
+            <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
+                <Media>
+                <Media.Body>
+                    <h4>eggert</h4>
+                    <h5>Class</h5>
+                </Media.Body>
+                <p>3.5</p>
+                </Media>
+            </ListGroup.Item>
+            <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
+                <Media>
+                <Media.Body>
+                    <h4>eggert</h4>
+                    <h5>Class</h5>
+                </Media.Body>
+                <p>3.5</p>
+                </Media>
+            </ListGroup.Item>
         </ListGroup>
     </div>);
   }
