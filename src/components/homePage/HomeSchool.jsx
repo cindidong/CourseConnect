@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
 function HomeSchool(props){
     const classes = useStyles();
     const [school, setSchool] = useState('UCLA');
+    //never change the name from hai, only change the school to the value
+    //this changes the selects's text inside the select
     const [state, setState] = useState({
         school: '',
         name: 'hai',
@@ -32,11 +34,12 @@ function HomeSchool(props){
         {
           notNull = false;
         }
+        //changes the school to the value in the options catergory
         setState({
         ...state,
-        [school]: value,
         [name]: value,
         });
+        //setting the null option/first option to show previous click
         setSchool((prev) => {
           if (notNull)
           {
