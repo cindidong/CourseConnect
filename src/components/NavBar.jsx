@@ -9,7 +9,8 @@ import Col from 'react-bootstrap/Col'
 
 function NavBar() {
     return (
-      <Navbar fluid fixed="top" bg="light" expand="lg">
+      //fixed="top" 
+      <Navbar fluid bg="light" expand="lg">
       <Container>
           <Navbar.Brand href="#home">Fruinwalk</Navbar.Brand>
           </Container>
