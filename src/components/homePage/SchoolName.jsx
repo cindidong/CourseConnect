@@ -1,0 +1,12 @@
+import React, { useState } from 'react';
+import Typography from '@material-ui/core/Typography';
+
+function SchoolName(){
+      return(
+        <div style={{textAlign: 'center'}}>
+        <Typography variant="h1" component="h2">
+        UCLA
+        </Typography>
+        </div>);
+    }
+    export default SchoolName;

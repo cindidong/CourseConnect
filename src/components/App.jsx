@@ -5,6 +5,8 @@ import SignUp from './SignUp.jsx'
 import ClassesSideBar from './reviewPage/classesSide/ClassesSideBar.jsx'
 import SingleReview from './reviewPage/reviewFormat/SingleReview.jsx'
 import SummaryReview from './reviewPage/summaryReview/SummaryReview.jsx'
+import HomeCards from './homePage/HomeCards.jsx'
+import Home from './homePage/Home.jsx'
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 var isLoggedIn = false;
 
 function App(){
-    return(<div>{isLoggedIn ? <ReviewFinal /> : <SignIn />}</div>);
+    return(<div>{isLoggedIn ? <ReviewFinal /> : <Home />}</div>);
 }
 
 export default App;
