@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 function HomeSchool(){
     const classes = useStyles();
     const [state, setState] = React.useState({
-        age: '',
+        school: '',
         name: 'hai',
     });
 
@@ -34,20 +34,20 @@ function HomeSchool(){
     return(
         <div style={{textAlign: 'center'}}>
         <FormControl className={classes.formControl}>
-        <InputLabel htmlFor="age-native-simple">Go to a different college?</InputLabel>
+        <InputLabel htmlFor="school-native-simple">Go to a different college?</InputLabel>
         <Select
           native
-          value={state.age}
+          value={state.school}
           onChange={handleChange}
           inputProps={{
-            name: 'age',
-            id: 'age-native-simple',
+            name: 'school',
+            id: 'school-native-simple',
           }}
         >
           <option aria-label="None" value="" />
-          <option value={10}>UCLA</option>
-          <option value={20}>Virgina Tech</option>
-          <option value={30}>UCB</option>
+          <option value={1}>UCLA</option>
+          <option value={2}>Virgina Tech</option>
+          <option value={3}>UCB</option>
         </Select>
       </FormControl>
     </div>);

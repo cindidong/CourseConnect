@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Typography from '@material-ui/core/Typography';
 
-function SchoolName(){
+function SchoolName(props){
       return(
         <div style={{textAlign: 'center'}}>
         <Typography variant="h1" component="h2">
