@@ -11,7 +11,7 @@ function ReviewButtons(){
         aria-label="vertical outlined primary button group"
       >
         <Button>Submit Review</Button>
-        <Button>I'm Enrolled</Button>
+        <Button>Groupchat</Button>
       </ButtonGroup>
     </div>
         );

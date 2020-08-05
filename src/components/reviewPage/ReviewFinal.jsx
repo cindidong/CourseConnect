@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import ReviewsSideBar from './ReviewsSideBar.jsx';
 import NavBar from '../NavBar.jsx'
 import ClassesSideBar from './ClassesSideBar.jsx'
