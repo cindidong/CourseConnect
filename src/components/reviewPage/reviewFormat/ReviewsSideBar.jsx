@@ -1,5 +1,5 @@
 import React from 'react';
-import Review from './reviewFormat/Review'
+import SingleReview from './SingleReview.jsx'
 import reviewData from './reviewData.js'
 
 function colorSelector(rating){
@@ -25,7 +25,7 @@ function ReviewsSideBar(props){
   return(
   <div>
   <p>{result.map( x => 
-    (<Review
+    (<SingleReview
         key={x.id}
         prof={x.prof}
         overallRating={x.overallRating}

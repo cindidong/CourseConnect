@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ProfInfo from './classesSide/ProfInfo.jsx'
-import ClassSearch from './classesSide/ClassSearch.jsx'
+import ProfInfo from './ProfInfo.jsx'
+import ClassSearch from './ClassSearch.jsx'
 
 
 function ClassesSideBar(props){

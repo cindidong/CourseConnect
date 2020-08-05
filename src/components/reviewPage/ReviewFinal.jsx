@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
-import ReviewsSideBar from './ReviewsSideBar.jsx';
+import ReviewsSideBar from './reviewFormat/ReviewsSideBar.jsx';
 import NavBar from '../NavBar.jsx'
-import ClassesSideBar from './ClassesSideBar.jsx'
+import ClassesSideBar from './classesSide/ClassesSideBar.jsx'
 import SplitPane, { Pane } from 'react-split-pane';
 import SummaryReview from './summaryReview/SummaryReview.jsx'
 

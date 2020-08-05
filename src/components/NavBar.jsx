@@ -19,7 +19,6 @@ function NavBar() {
             <Nav className="ml-auto">
               <Nav.Link href="#reviews">Reviews</Nav.Link>
               <Nav.Link href="#forum">Forum</Nav.Link>
-              <Nav.Link href="#myclasses">My Classes</Nav.Link>
               <NavDropdown title="My Profile" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Edit My Profile</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Something</NavDropdown.Item>

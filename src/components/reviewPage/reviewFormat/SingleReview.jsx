@@ -7,7 +7,7 @@ import Box from '@material-ui/core/Box';
 import Chip from '@material-ui/core/Chip';
 
 
-function TempReview(props) {
+function SingleReview(props) {
     return (
     <div>
     <Card>
@@ -44,5 +44,5 @@ function TempReview(props) {
     </div>);
 }
 
-export default TempReview;
+export default SingleReview;
 
