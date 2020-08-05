@@ -5,7 +5,7 @@ function SchoolName(props){
       return(
         <div style={{textAlign: 'center'}}>
         <Typography variant="h1" component="h2">
-        UCLA
+        {props.school}
         </Typography>
         </div>);
     }

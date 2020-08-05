@@ -10,8 +10,6 @@ import Box from '@material-ui/core/Box';
 function Home(){
     return(
       <div>
-      <NavBar/>
-        <SchoolName/>
         <HomeSchool/>
         <HomeCards/>
       </div>);

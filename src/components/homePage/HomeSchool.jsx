@@ -6,6 +6,7 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import NativeSelect from '@material-ui/core/NativeSelect';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
@@ -16,8 +17,9 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-function HomeSchool(){
+function HomeSchool(props){
     const classes = useStyles();
+    const [school, setSchool] = useState('UCLA');
     const [state, setState] = React.useState({
         school: '',
         name: 'hai',
@@ -29,10 +31,14 @@ function HomeSchool(){
         ...state,
         [name]: event.target.value,
         });
+        setSchool(event.target.value);
     };
 
     return(
         <div style={{textAlign: 'center'}}>
+        <Typography variant="h1" component="h2">
+        {school}
+        </Typography>
         <FormControl className={classes.formControl}>
         <InputLabel htmlFor="school-native-simple">Go to a different college?</InputLabel>
         <Select
@@ -45,9 +51,9 @@ function HomeSchool(){
           }}
         >
           <option aria-label="None" value="" />
-          <option value={1}>UCLA</option>
-          <option value={2}>Virgina Tech</option>
-          <option value={3}>UCB</option>
+          <option value={"UCLA"}>UCLA</option>
+          <option value={"Virgina Tech"}>Virgina Tech</option>
+          <option value={"UCB"}>UCB</option>
         </Select>
       </FormControl>
     </div>);
