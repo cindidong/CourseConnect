@@ -7,6 +7,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
+import ForumComment from './postFormat/ForumComment.jsx'
 
 
 function TabPanel(props) {
@@ -80,7 +81,7 @@ function TabsForum(){
             </Tabs>
         </Paper>
         <TabPanel value={value} index={0}>
-            Item One
+            <ForumComment/>
         </TabPanel>
         <TabPanel value={value} index={1}>
             Item Two

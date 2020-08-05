@@ -11,6 +11,7 @@ import ReactDOM from 'react-dom';
 import ReviewFinal from '../reviewPage/ReviewFinal'
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
+import Forum from '../forumPage/Forum.jsx'
 
 const useStyles = makeStyles({
   root: {
@@ -38,7 +39,7 @@ export default function HomeCards() {
         </CardContent>
       </CardActionArea>
     </Card>
-    <Card className={classes.root} onClick={() => { return(ReactDOM.render(<ReviewFinal />, document.getElementById('root'))) }}>
+    <Card className={classes.root} onClick={() => { return(ReactDOM.render(<Forum />, document.getElementById('root'))) }}>
       <CardActionArea>
         <CardMedia
           component="img"
