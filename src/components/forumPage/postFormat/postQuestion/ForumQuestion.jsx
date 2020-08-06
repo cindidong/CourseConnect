@@ -39,11 +39,6 @@ function ForumQuestion(props) {
         <Typography variant="h3" component="h2">
         what classes should I avoid as a cs major?
         </Typography>
-        <Box display="flex" flexWrap="wrap" width="100%">
-                <Chip label="Classes" variant="outlined" />
-                <Chip label="Major" variant="outlined" />
-                <Chip label="Avoid" variant="outlined" />
-        </Box>
         <Typography variant="body1" component="p">
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
             ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,

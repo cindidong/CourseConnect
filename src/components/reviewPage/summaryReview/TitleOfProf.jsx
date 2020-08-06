@@ -1,16 +1,18 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card'
 import Media from 'react-bootstrap/Media'
-import Button from '@material-ui/core/Button';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
+import Typography from '@material-ui/core/Typography';
 
 function TitleOfProf(props){
     return(
     <div>
     <Media>
         <Media.Body>
-            <h2>{props.prof}</h2>
-            <h5>Class</h5>
+            <Typography variant="h3" component="h2">
+                {props.prof}
+            </Typography>
+            <Typography variant="h4" component="h2">
+                CS 32
+            </Typography>
         </Media.Body>
     </Media>
     </div>);

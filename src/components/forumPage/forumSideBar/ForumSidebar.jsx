@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ForumSeach from './ForumSeach.jsx'
 import ForumSearchQuestions from './ForumSearchQuestions'
-import forumData from '../forumData.js'
 import ForumSelectMajor from './ForumSelectMajor.jsx'
 
 function ForumSidebar(props){

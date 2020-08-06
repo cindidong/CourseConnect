@@ -14,97 +14,45 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
-
 function ProfInfo(props){
     return(
         <div>
         <ListGroup defaultActiveKey="#link1">
-            <ListGroup.Item action onClick={() => {props.changeProfName("nachenberg")}}>
+            <ListGroup.Item action onClick={() => {props.changeProfName("Nachenberg")}}>
                 <Media>
                 <Media.Body>
-                    <h5>nachenberg</h5>
-                    <h5>Class</h5>
+                <Typography variant="h5" component="h2">
+                    Nachenberg
+                </Typography>
+                <Typography variant="h6" component="h2">
+                    CS 32
+                </Typography>
                 </Media.Body>
                 <p>4.5</p>
                 </Media>
             </ListGroup.Item>
-            <ListGroup.Item action onClick={() => {props.changeProfName("stahl")}}>
+            <ListGroup.Item action onClick={() => {props.changeProfName("Stahl")}}>
                 <Media>
                 <Media.Body>
-                    <h5>stahl</h5>
-                    <h5>Class</h5>
+                <Typography variant="h5" component="h2">
+                    Stahl
+                </Typography>
+                <Typography variant="h6" component="h2">
+                    CS 32
+                </Typography>
                 </Media.Body>
                 <p>3.5</p>
                 </Media>
             </ListGroup.Item>
-            <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
+            <ListGroup.Item action onClick={() => {props.changeProfName("Eggert")}}>
                 <Media>
                 <Media.Body>
-                    <h4>eggert</h4>
-                    <h5>Class</h5>
-                </Media.Body>
-                <p>3.5</p>
-                </Media>
-            </ListGroup.Item>
-            <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
-                <Media>
-                <Media.Body>
-                    <h4>eggert</h4>
-                    <h5>Class</h5>
-                </Media.Body>
-                <p>3.5</p>
-                </Media>
-            </ListGroup.Item>
-            <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
-                <Media>
-                <Media.Body>
-                    <h4>eggert</h4>
-                    <h5>Class</h5>
-                </Media.Body>
-                <p>3.5</p>
-                </Media>
-            </ListGroup.Item>
-            <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
-                <Media>
-                <Media.Body>
-                    <h4>eggert</h4>
-                    <h5>Class</h5>
-                </Media.Body>
-                <p>3.5</p>
-                </Media>
-            </ListGroup.Item>
-            <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
-                <Media>
-                <Media.Body>
-                    <h4>eggert</h4>
-                    <h5>Class</h5>
-                </Media.Body>
-                <p>3.5</p>
-                </Media>
-            </ListGroup.Item>
-            <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
-                <Media>
-                <Media.Body>
-                    <h4>eggert</h4>
-                    <h5>Class</h5>
-                </Media.Body>
-                <p>3.5</p>
-                </Media>
-            </ListGroup.Item>
-            <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
-                <Media>
-                <Media.Body>
-                    <h4>eggert</h4>
-                    <h5>Class</h5>
-                </Media.Body>
-                <p>3.5</p>
-                </Media>
-            </ListGroup.Item>
-            <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
-                <Media>
-                <Media.Body>
-                    <h4>eggert</h4>
-                    <h5>Class</h5>
+                <Typography variant="h5" component="h2">
+                    Eggert
+                </Typography>
+                <Typography variant="h6" component="h2">
+                    CS 32
+                </Typography>
                 </Media.Body>
                 <p>3.5</p>
                 </Media>

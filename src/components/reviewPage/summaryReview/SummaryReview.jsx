@@ -20,7 +20,7 @@ function SummaryReview(props){
                         <Box p={1} flexGrow={1}>
                             <ReviewButtons/>
                         </Box>
-                        <div style={{ width: '60%' }}>
+                        <div style={{ width: '100%' }}>
                         <Box p={1}>
                             <RatingsBar/>
                         </Box>
@@ -28,7 +28,7 @@ function SummaryReview(props){
                 </Box>
             </div>
             <div style={{ width: '40%' }}>
-                    <TagsBar/>
+                <TagsBar/>
             </div>
         </Box>
         </div>

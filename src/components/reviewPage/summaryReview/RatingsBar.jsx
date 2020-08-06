@@ -19,6 +19,14 @@ function RatingsBar(){
                 <td>Workload</td>
                 <td><Rating name="size-large" defaultValue={2} readOnly/></td>
             </tr>
+            <tr>
+                <td>Clarity</td>
+                <td><Rating name="size-large" defaultValue={2} readOnly/></td>
+            </tr>
+            <tr>
+                <td>Approachability</td>
+                <td><Rating name="size-large" defaultValue={2} readOnly/></td>
+            </tr>
             </Table>
         </div>
         );

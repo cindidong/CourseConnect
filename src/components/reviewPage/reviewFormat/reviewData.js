@@ -1,7 +1,7 @@
 const reviewData = [
     {
       id: 1,
-      prof: "nachenberg",
+      prof: "Nachenberg",
       overallRating: "5.0",
       taken: "Fall 2019",
       submitted: "1/21/20",
@@ -13,7 +13,7 @@ const reviewData = [
     },
     {
         id: 2,
-        prof: "nachenberg",
+        prof: "Nachenberg",
         overallRating: "3.5",
         taken: "Fall 2019",
         submitted: "12/22/19",
@@ -25,7 +25,7 @@ const reviewData = [
       },
       {
         id: 3,
-        prof: "nachenberg",
+        prof: "Nachenberg",
         overallRating: "2.0",
         taken: "Fall 2019",
         submitted: "2/04/2018",
@@ -37,7 +37,7 @@ const reviewData = [
       },
       {
         id: 4,
-        prof: "nachenberg",
+        prof: "Nachenberg",
         overallRating: "3.5",
         taken: "Winter 2019",
         submitted: "5/04/2019",
@@ -49,7 +49,7 @@ const reviewData = [
       },
       {
         id: 5,
-        prof: "stahl",
+        prof: "Stahl",
         overallRating: "3.5",
         taken: "Fall 2017",
         submitted: "2/04/2018",
@@ -61,7 +61,7 @@ const reviewData = [
       },
       {
         id: 6,
-        prof: "stahl",
+        prof: "Nachenberg",
         overallRating: "3.7",
         taken: "Fall 2017",
         submitted: "2/06/2018",
@@ -73,7 +73,7 @@ const reviewData = [
       },
       {
         id: 7,
-        prof: "stahl",
+        prof: "Stahl",
         overallRating: "3.5",
         taken: "Fall 2017",
         submitted: "2/11/2018",
@@ -85,7 +85,7 @@ const reviewData = [
       },
       {
         id: 8,
-        prof: "eggert",
+        prof: "Eggert",
         overallRating: "3.5",
         taken: "Spring 2017",
         submitted: "6/14/2018",
@@ -97,7 +97,7 @@ const reviewData = [
       },
       {
         id: 9,
-        prof: "eggert",
+        prof: "Eggert",
         overallRating: "3.5",
         taken: "Spring 2017",
         submitted: "7/02/2018",
@@ -109,7 +109,7 @@ const reviewData = [
       },
       {
         id: 10,
-        prof: "eggert",
+        prof: "Eggert",
         overallRating: "3.5",
         taken: "Spring 2017",
         submitted: "7/01/2018",

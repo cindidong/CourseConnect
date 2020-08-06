@@ -8,6 +8,7 @@ import SummaryReview from './reviewPage/summaryReview/SummaryReview.jsx'
 import HomeCards from './homePage/HomeCards.jsx'
 import Home from './homePage/Home.jsx'
 import Forum from './forumPage/Forum.jsx'
+import SubmitReviewForm from './addReviewForm/SubmitReviewForm.jsx'
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,7 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 var isLoggedIn = false;
 
 function App(){
-    return(<div>{isLoggedIn ? <ReviewFinal /> : <SignIn />}</div>);
+    return(<div>{isLoggedIn ? <Home /> : <SubmitReviewForm />}</div>);
 }
 
 export default App;

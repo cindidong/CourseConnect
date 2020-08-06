@@ -7,7 +7,7 @@ import SplitPane, { Pane } from 'react-split-pane';
 import SummaryReview from './summaryReview/SummaryReview.jsx'
 
 function ReviewFinal(){
-  const [newName, setNewName] = useState("nachenberg");
+  const [newName, setNewName] = useState("Nachenberg");
   function changeProfName(profName) {
     setNewName(profName);
   }
