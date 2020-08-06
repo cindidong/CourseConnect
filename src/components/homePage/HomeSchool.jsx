@@ -73,7 +73,7 @@ function HomeSchool(props){
           <option value={"UCB"}>UCB</option>
           <option value={"UCR"}>UCR</option>
           <option value={"UCI"}>UCI</option>
-          <option value={"Virgina Tech"}>Virgina Tech</option>
+          <option value={"Virginia Tech"}>Virginia Tech</option>
           <option value={"Cal Poly"}>Cal Poly</option>
         </Select>
       </FormControl>

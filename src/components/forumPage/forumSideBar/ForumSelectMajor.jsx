@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   
     return (
       <div>
-         <FormControl variant="outlined" className={classes.formControl}>
+         <FormControl className={classes.formControl}>
         <InputLabel htmlFor="school-native-simple">Pick a different major</InputLabel>
         <Select
           native

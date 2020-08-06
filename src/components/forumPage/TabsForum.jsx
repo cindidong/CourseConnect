@@ -75,11 +75,6 @@ function TabsForum(){
                 <Tab label="Classes/Class Schedule" {...a11yProps(2)}/>
                 <Tab label="Major" {...a11yProps(3)}/>
                 <Tab label="Social" {...a11yProps(4)}/>
-                <Tab label="Social" {...a11yProps(4)}/>
-                <Tab label="Social" {...a11yProps(4)}/>
-                <Tab label="Social" {...a11yProps(4)}/>
-                <Tab label="Social" {...a11yProps(4)}/>
-                <Tab label="Social" {...a11yProps(4)}/>
             </Tabs>
         </Paper>
         <TabPanel value={value} index={0}>

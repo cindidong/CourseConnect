@@ -69,6 +69,35 @@ function ForumSubComment(props) {
           tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
           Donec lacinia congue felis in faucibus.
       </Typography>
+      <Media>
+      <img
+        width={30}
+        height={30}
+        className="mr-3"
+        src="holder.js/64x64"
+        alt="pfp"
+        />
+      <Media.Body>
+      <Box display="flex">
+          <Box alignSelf='flex-end' flexGrow={1}>
+              <Typography color="textSecondary" gutterBottom>
+                  username
+              </Typography>
+          </Box>
+          <Box p={1}>
+              <Typography color="textSecondary" gutterBottom>
+                  date
+              </Typography>
+          </Box>
+      </Box>
+      <Typography variant="body1" component="p">
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+          ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+          tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+          Donec lacinia congue felis in faucibus.
+      </Typography>
+      </Media.Body>
+  </Media>
       </Media.Body>
   </Media>
       </Media.Body>

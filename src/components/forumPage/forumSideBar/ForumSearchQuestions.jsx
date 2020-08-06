@@ -24,11 +24,6 @@ function ProfInfo(props){
                 <Media>
                 <Media.Body>
                     <h4>what classes should I avoid as a cs major?</h4>
-                    <Box display="flex" flexWrap="wrap" width="100%">
-                        <Chip label="Classes" variant="outlined" />
-                        <Chip label="Major" variant="outlined" />
-                        <Chip label="Avoid?" variant="outlined" />
-                    </Box>
                 </Media.Body>
                 </Media>
             </ListGroup.Item>
