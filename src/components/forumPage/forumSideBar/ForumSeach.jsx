@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
+import Chip from '@material-ui/core/Chip';
 
 
 function ForumSeach(){

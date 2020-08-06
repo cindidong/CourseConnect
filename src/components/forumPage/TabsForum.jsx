@@ -7,7 +7,9 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
-import ForumComment from './postFormat/ForumComment.jsx'
+import ForumComment from './postFormat/postComment/ForumComment.jsx'
+import SplitPane, { Pane } from 'react-split-pane';
+import ForumContentSpilt from './ForumContentSpilt.jsx'
 
 
 function TabPanel(props) {
@@ -81,7 +83,7 @@ function TabsForum(){
             </Tabs>
         </Paper>
         <TabPanel value={value} index={0}>
-            <ForumComment/>
+          <ForumContentSpilt/>
         </TabPanel>
         <TabPanel value={value} index={1}>
             Item Two
