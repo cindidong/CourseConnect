@@ -9,26 +9,29 @@ import SubmitReviewTags from './SubmitReviewTags.jsx'
 import reivewSubmissionData from './reivewSubmissionData.js'
 import tagNames from './tagNames.js'
 
-const handleClick = () => {
+function handleClick(event)
+{
   console.info('You clicked the Chip.');
-};
+}
 
 function SubmitReviewForm(){
     return(
       <div>
-      <p>{reivewSubmissionData.map( x => 
+      {reivewSubmissionData.map( x => 
         (<SubmitReviewInfo
             key={x.id}
             title={x.title}
             data={x.data}
             optional={x.optional}
           />))
-        }</p>
+        }
+        <div style={{ marginBottom: "1%"}}>
         <Box display="flex" justifyContent='center' flexWrap="wrap" p={1}>
           {tagNames.map( x => 
           (<Chip label={x.name} onClick={handleClick} variant="outlined" />))
           }
         </Box>
+        </div>
         <SubmitReviewRating/>
       </div>);
   }
