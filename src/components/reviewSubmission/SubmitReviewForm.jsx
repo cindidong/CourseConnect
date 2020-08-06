@@ -8,13 +8,25 @@ import SubmitReviewRating from './SubmitReviewRating.jsx'
 import SubmitReviewTags from './SubmitReviewTags.jsx'
 import reivewSubmissionData from './reivewSubmissionData.js'
 import tagNames from './tagNames.js'
+import SubmitReviewText from './SubmitReviewText';
+import textFieldData from './textFieldData.js'
 
-function handleClick(event)
-{
-  console.info('You clicked the Chip.');
-}
 
 function SubmitReviewForm(){
+    const [isClicked, setIsClicked] = React.useState(false);
+    var buttonType = "outlined";
+    const handleClick = (event) => {
+      console.log(event.target);
+      setIsClicked(!isClicked);
+      if (isClicked)
+      {
+        buttonType = "default";
+      }
+      else
+      {
+        buttonType = "outlined";
+      }
+    };
     return(
       <div>
       {reivewSubmissionData.map( x => 
@@ -28,11 +40,18 @@ function SubmitReviewForm(){
         <div style={{ marginBottom: "1%"}}>
         <Box display="flex" justifyContent='center' flexWrap="wrap" p={1}>
           {tagNames.map( x => 
-          (<Chip label={x.name} onClick={handleClick} variant="outlined" />))
+          (<Chip label={x.name} onClick={handleClick} variant={buttonType} />))
           }
         </Box>
         </div>
         <SubmitReviewRating/>
+        {textFieldData.map( x => 
+        (<SubmitReviewText
+            key={x.id}
+            title={x.title}
+            description={x.description}
+          />))
+        }
       </div>);
   }
   export default SubmitReviewForm;

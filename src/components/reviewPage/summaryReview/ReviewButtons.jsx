@@ -66,7 +66,7 @@ export default function FinalReviewForm() {
               Cancel
             </Button>
             <Button onClick={handleClose} color="primary">
-              Subscribe
+              Submit
             </Button>
           </DialogActions>
         </Dialog>

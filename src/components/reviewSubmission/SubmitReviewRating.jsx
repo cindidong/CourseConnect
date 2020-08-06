@@ -20,16 +20,16 @@ const overall = {
   };
 
   const easiness = {
-    0.5: 'Useless',
-    1: 'Useless+',
-    1.5: 'Poor',
-    2: 'Poor+',
-    2.5: 'Ok',
-    3: 'Ok+',
-    3.5: 'Good',
-    4: 'Good+',
-    4.5: 'Excellent',
-    5: 'Excellent+',
+    0.5: 'Very Difficult',
+    1: 'Very Difficult',
+    1.5: 'Difficult',
+    2: 'Difficult',
+    2.5: 'Average',
+    3: 'Average',
+    3.5: 'Easy',
+    4: 'Easy',
+    4.5: 'Very Easy',
+    5: 'Very Easy',
   };
 
   const workload = {
@@ -46,34 +46,34 @@ const overall = {
   };
 
   const clarity = {
-    0.5: 'Useless',
-    1: 'Useless+',
-    1.5: 'Poor',
-    2: 'Poor+',
+    0.5: 'Very Confusing',
+    1: 'Very Confusing',
+    1.5: 'Confusing',
+    2: 'Confusing',
     2.5: 'Ok',
-    3: 'Ok+',
-    3.5: 'Good',
-    4: 'Good+',
-    4.5: 'Excellent',
-    5: 'Excellent+',
+    3: 'Ok',
+    3.5: 'Clear',
+    4: 'Clear',
+    4.5: 'Very Clear',
+    5: 'Very Clear',
   };
 
   const approachability = {
-    0.5: 'Useless',
-    1: 'Useless+',
-    1.5: 'Poor',
-    2: 'Poor+',
+    0.5: 'Very Mean',
+    1: 'Very Mean',
+    1.5: 'Mean',
+    2: 'Mean',
     2.5: 'Ok',
-    3: 'Ok+',
-    3.5: 'Good',
-    4: 'Good+',
-    4.5: 'Excellent',
-    5: 'Excellent+',
+    3: 'Ok',
+    3.5: 'Nice',
+    4: 'Nice',
+    4.5: 'Very Nice',
+    5: 'Very Nice',
   };
 
   const useStyles = makeStyles({
     root: {
-      width: 200,
+      width: '100%',
       display: 'flex',
       alignItems: 'center',
     },

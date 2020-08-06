@@ -8,17 +8,8 @@ import Select from '@material-ui/core/Select';
 import Typography from '@material-ui/core/Typography';
 import MenuItem from '@material-ui/core/MenuItem';
 
-const useStyles = makeStyles((theme) => ({
-    formControl: {
-      minWidth: '100%',
-    },
-    selectEmpty: {
-      marginTop: theme.spacing(2),
-    },
-  }));
   
   export default function ForumSelectMajor() {
-    const classes = useStyles();
     const [age, setAge] = React.useState('');
   
     const handleChange = (event) => {
@@ -27,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   
     return (
       <div>
-         <FormControl className={classes.formControl}>
+         <FormControl fullWidth>
         <InputLabel htmlFor="school-native-simple">Pick a different major</InputLabel>
         <Select
           native

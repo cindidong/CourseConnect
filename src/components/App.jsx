@@ -16,7 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 var isLoggedIn = false;
 
 function App(){
-    return(<div>{isLoggedIn ? <Home /> : <ReviewFinal />}</div>);
+    return(<div>{isLoggedIn ? <Home /> : <SignIn />}</div>);
 }
 
 export default App;
