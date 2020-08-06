@@ -3,9 +3,7 @@ import ReviewFinal from './reviewPage/ReviewFinal'
 import Home from './homePage/Home.jsx'
 import SignUp from './SignUp.jsx'
 import ReactDOM from 'react-dom';
-import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
@@ -21,7 +19,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+        CourseConnect
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -31,14 +29,10 @@ function Copyright() {
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(12),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-  },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
   },
   form: {
     width: '100%', // Fix IE 11 issue.
@@ -54,12 +48,11 @@ export default function SignIn() {
 
   return (
     <Container component="main" maxWidth="xs">
-      <CssBaseline />
       <div className={classes.paper}>
-        <Avatar className={classes.avatar}>
-        
-        </Avatar>
-        <Typography component="h1" variant="h5">
+      <Typography variant="h2" component="h2">
+        CourseConnect
+      </Typography>
+        <Typography component="h1" variant="h4">
           Sign in
         </Typography>
         <form className={classes.form} noValidate>

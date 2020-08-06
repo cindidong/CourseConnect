@@ -57,7 +57,7 @@ const overall = {
     4.5: 'Excellent',
     5: 'Excellent+',
   };
-  
+
   const approachability = {
     0.5: 'Useless',
     1: 'Useless+',

@@ -25,7 +25,7 @@ function ForumQuestion(props) {
                 alt="pfp"
                 />
             </Box>
-            <Box alignSelf='flex-end' flexGrow={1}>
+            <Box alignSelf='center' flexGrow={1}>
                 <Typography color="textSecondary" gutterBottom>
                     username
                 </Typography>
@@ -36,7 +36,7 @@ function ForumQuestion(props) {
                 </Typography>
             </Box>
         </Box>
-        <Typography variant="h3" component="h2">
+        <Typography variant="h3" component="h2" style={{ marginBottom: "4%"}}>
         what classes should I avoid as a cs major?
         </Typography>
         <Typography variant="body1" component="p">

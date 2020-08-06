@@ -22,6 +22,7 @@ const useStyles = makeStyles({
 export default function HomeCards() {
   const classes = useStyles();
   return (
+    <div style={{ marginTop: "8%"}}>
     <Box display="flex" justifyContent="space-evenly">
     <Card className={classes.root} onClick={() => { return(ReactDOM.render(<ReviewFinal />, document.getElementById('root'))) }}>
       <CardActionArea>
@@ -56,5 +57,6 @@ export default function HomeCards() {
       </CardActionArea>
     </Card>
     </Box>
+    </div>
   );
 }

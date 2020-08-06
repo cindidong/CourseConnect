@@ -10,7 +10,7 @@ import Col from 'react-bootstrap/Col'
 function NavBar() {
     return (
       //fixed="top" 
-      <Navbar fluid bg="light" expand="lg">
+      <Navbar bg="light" expand="lg">
       <Container>
           <Navbar.Brand href="#home">CourseConnect</Navbar.Brand>
           </Container>

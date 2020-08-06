@@ -20,7 +20,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+        CourseConnect
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -30,7 +30,7 @@ function Copyright() {
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(9),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -53,36 +53,25 @@ export default function SignUp() {
 
   return (
     <Container component="main" maxWidth="xs">
-      <CssBaseline />
       <div className={classes.paper}>
-        <Avatar className={classes.avatar}>
-        </Avatar>
-        <Typography component="h1" variant="h5">
+        <Typography variant="h2" component="h2">
+        CourseConnect
+      </Typography>
+        <Typography component="h1" variant="h4">
           Sign up
         </Typography>
         <form className={classes.form} noValidate>
           <Grid container spacing={2}>
-            <Grid item xs={12} sm={6}>
-              <TextField
-                autoComplete="fname"
-                name="firstName"
-                variant="outlined"
-                required
-                fullWidth
-                id="firstName"
-                label="First Name"
-                autoFocus
-              />
-            </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12}>
               <TextField
                 variant="outlined"
                 required
                 fullWidth
-                id="lastName"
-                label="Last Name"
-                name="lastName"
-                autoComplete="lname"
+                name="username"
+                label="Username"
+                type="username"
+                id="username"
+                autoComplete="current-username"
               />
             </Grid>
             <Grid item xs={12}>
