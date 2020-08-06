@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import Box from '@material-ui/core/Box';
-import TempComment from './postComment/TempComment.jsx'
+import ForumSubComment from './postComment/ForumSubComment.jsx'
+import ForumComment from './postComment/ForumComment.jsx'
 import ForumQuestion from './postQuestion/ForumQuestion.jsx'
 import Divider from '@material-ui/core/Divider';
 
@@ -9,7 +10,7 @@ function ForumPost(){
     return(
       <div>
         <ForumQuestion/>
-        <TempComment/>
+        <ForumSubComment/>
       </div>);
   }
   export default ForumPost;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Comment, Avatar } from 'antd';
 
+//from antd api
 const TempComment = ({ children }) => (
   <Comment
     actions={[<span key="comment-nested-reply-to">Reply to</span>]}

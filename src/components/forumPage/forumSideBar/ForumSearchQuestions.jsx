@@ -13,7 +13,8 @@ import Typography from '@material-ui/core/Typography';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-
+import Chip from '@material-ui/core/Chip';
+import Box from '@material-ui/core/Box';
 
 function ProfInfo(props){
     return(
@@ -22,28 +23,27 @@ function ProfInfo(props){
             <ListGroup.Item action onClick={() => {props.changeProfName("nachenberg")}}>
                 <Media>
                 <Media.Body>
-                    <h5>nachenberg</h5>
-                    <h5>Class</h5>
+                    <h4>what classes should I avoid as a cs major?</h4>
+                    <Box display="flex" flexWrap="wrap" width="100%">
+                        <Chip label="Classes" variant="outlined" />
+                        <Chip label="Major" variant="outlined" />
+                        <Chip label="Avoid?" variant="outlined" />
+                    </Box>
                 </Media.Body>
-                <p>4.5</p>
                 </Media>
             </ListGroup.Item>
             <ListGroup.Item action onClick={() => {props.changeProfName("stahl")}}>
                 <Media>
                 <Media.Body>
-                    <h5>stahl</h5>
-                    <h5>Class</h5>
+                    <h4>stahl</h4>
                 </Media.Body>
-                <p>3.5</p>
                 </Media>
             </ListGroup.Item>
             <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
                 <Media>
                 <Media.Body>
                     <h4>eggert</h4>
-                    <h5>Class</h5>
                 </Media.Body>
-                <p>3.5</p>
                 </Media>
             </ListGroup.Item>
         </ListGroup>

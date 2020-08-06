@@ -83,19 +83,29 @@ function TabsForum(){
             </Tabs>
         </Paper>
         <TabPanel value={value} index={0}>
-          <ForumContentSpilt/>
+          <ForumContentSpilt 
+          changeMajor={false}
+          />
         </TabPanel>
         <TabPanel value={value} index={1}>
-            Item Two
+          <ForumContentSpilt 
+            changeMajor={false}
+            />
         </TabPanel>
         <TabPanel value={value} index={2}>
-            Item Three
+          <ForumContentSpilt 
+            changeMajor={true}
+            />
         </TabPanel>
         <TabPanel value={value} index={3}>
-            Item Four
+          <ForumContentSpilt 
+            changeMajor={true}
+            />
         </TabPanel>
         <TabPanel value={value} index={4}>
-            Item Five
+          <ForumContentSpilt 
+            changeMajor={false}
+            />
         </TabPanel>
       </div>);
   }

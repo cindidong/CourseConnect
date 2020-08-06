@@ -7,12 +7,14 @@ import ForumPost from './postFormat/ForumPost'
 import Divider from '@material-ui/core/Divider';
 
 
-function ForumContentSpilt()
+function ForumContentSpilt(props)
 {
     return(
         <SplitPane split="vertical" defaultSize={1000} primary="second" paneStyle={{overflow: "auto"}}>
         <div className="Pane1">
-            <ForumSidebar/>
+            <ForumSidebar 
+              changeMajor={props.changeMajor}
+            />
         </div>
         <div className="Pane2">
           <ForumPost/>

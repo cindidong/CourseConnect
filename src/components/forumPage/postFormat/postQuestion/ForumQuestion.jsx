@@ -1,3 +1,4 @@
+//material ui
 import React from 'react';
 import Media from 'react-bootstrap/Media'
 import Paper from '@material-ui/core/Paper';
@@ -12,7 +13,7 @@ import Button from '@material-ui/core/Button';
 function ForumQuestion(props) {
     return (
     <div>
-    <Card variant="outlined">
+    <Card>
       <CardContent>
         <Box display="flex">
             <Box>

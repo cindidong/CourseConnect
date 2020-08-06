@@ -11,6 +11,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import ForumSubComment from './ForumSubComment.jsx'
 
+//using material ui card
 function ForumComment(props) {
     return (
     <div>
@@ -43,7 +44,6 @@ function ForumComment(props) {
           tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
           Donec lacinia congue felis in faucibus.
       </Typography>
-      <ForumSubComment/>
     </CardContent>
     <CardActions>
       <Button size="small">Reply</Button>
