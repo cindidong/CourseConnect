@@ -53,7 +53,7 @@ function HomeSchool(props){
     };
 
     return(
-        <div style={{textAlign: 'center'}}>
+        <div style={{textAlign: 'center', marginTop: '3%'}}>
         <Typography variant="h1" component="h2">
         {school}
         </Typography>
