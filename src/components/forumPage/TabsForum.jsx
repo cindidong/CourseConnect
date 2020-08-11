@@ -10,7 +10,19 @@ import Typography from '@material-ui/core/Typography';
 import ForumComment from './postFormat/postComment/ForumComment.jsx'
 import SplitPane, { Pane } from 'react-split-pane';
 import ForumContentSpilt from './ForumContentSpilt.jsx'
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
 
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#2196f3',
+    },
+    secondary: {
+      main: '#4791db',
+    },
+  },
+});
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -60,6 +72,7 @@ function TabsForum(){
     };
     return(
       <div>
+      <ThemeProvider theme={theme}>
         <Paper className={classes.root}>
             <Tabs
                 value={value}
@@ -102,6 +115,7 @@ function TabsForum(){
             changeMajor={false}
             />
         </TabPanel>
+        </ThemeProvider>
       </div>);
   }
   export default TabsForum;

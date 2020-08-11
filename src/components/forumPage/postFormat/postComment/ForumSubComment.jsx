@@ -27,20 +27,17 @@ function ForumSubComment(props) {
       <Box display="flex">
           <Box alignSelf='center' flexGrow={1}>
               <Typography color="textSecondary" gutterBottom>
-                  username
+                Ribbot
               </Typography>
           </Box>
           <Box p={1}>
               <Typography color="textSecondary" gutterBottom>
-                  date
+                5/19/2020
               </Typography>
           </Box>
       </Box>
       <Typography variant="body1" component="p">
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-          ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-          tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
-          Donec lacinia congue felis in faucibus.
+      While I do agree that a majority of bioengineers go to graduate school since it is a bit of a niche field, you should definitely consider if you would enjoy the mechE curriculum. A lot of mechE's are able to work in bioE fields since it's much easier for employers to teach mechE's bio as opposed to the technical engineering skills you acquire as a mechE
       </Typography>
       <Media style={{ marginTop: "1%"}}>
       <img
@@ -54,23 +51,72 @@ function ForumSubComment(props) {
       <Box display="flex">
           <Box alignSelf='center' flexGrow={1}>
               <Typography color="textSecondary" gutterBottom>
-                  username
+                Blathers
               </Typography>
           </Box>
           <Box p={1}>
               <Typography color="textSecondary" gutterBottom>
-                  date
+                5/20/2020
               </Typography>
           </Box>
       </Box>
       <Typography variant="body1" component="p">
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-          ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-          tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
-          Donec lacinia congue felis in faucibus.
+        I agree with Ribbot. First consider whether you enjoy the mechE curriculum, it's quite different and focuses much less on thermodynamics than the bioE curriculum does. Also, what are your reasons for avoiding grad school? Grad school could be a great option for you if that's what you want
       </Typography>
       </Media.Body>
   </Media>
+      </Media.Body>
+  </Media>
+  <Media style={{ marginTop: "1%"}}>
+        <img
+        width={30}
+        height={30}
+        className="mr-3"
+        src="holder.js/64x64"
+        alt="pfp"
+        />
+      <Media.Body>
+      <Box display="flex">
+          <Box alignSelf='center' flexGrow={1}>
+              <Typography color="textSecondary" gutterBottom>
+                boopboopbeep
+              </Typography>
+          </Box>
+          <Box p={1}>
+              <Typography color="textSecondary" gutterBottom>
+                5/21/2020
+              </Typography>
+          </Box>
+      </Box>
+      <Typography variant="body1" component="p">
+      Depending on what you want to go into in the bioE field (genetic engineering, medical devices, etc.) the necessity of grad school will differ. If you want to do genetic engineering where most of the work is in research, a PhD may be required.
+      </Typography>
+      </Media.Body>
+  </Media>
+  <Media style={{ marginTop: "1%"}}>
+        <img
+        width={30}
+        height={30}
+        className="mr-3"
+        src="holder.js/64x64"
+        alt="pfp"
+        />
+      <Media.Body>
+      <Box display="flex">
+          <Box alignSelf='center' flexGrow={1}>
+              <Typography color="textSecondary" gutterBottom>
+                Caroline666
+              </Typography>
+          </Box>
+          <Box p={1}>
+              <Typography color="textSecondary" gutterBottom>
+                5/21/2020
+              </Typography>
+          </Box>
+      </Box>
+      <Typography variant="body1" component="p">
+        mechE will suck the life out of you don't switch if you like to feel alive.
+      </Typography>
       </Media.Body>
   </Media>
   </div>);

@@ -14,6 +14,20 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Logo from './logo.png';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+import './NavBar.css';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#1976d2',
+    },
+    secondary: {
+      main: '#4791db',
+    },
+  },
+});
 
 function Copyright() {
   return (
@@ -30,7 +44,7 @@ function Copyright() {
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(12),
+    marginTop: theme.spacing(9),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -48,10 +62,18 @@ export default function SignIn() {
   const classes = useStyles();
 
   return (
+    <div styles={{backgroundColor: '#c3e5ff'}}>
+    <ThemeProvider theme={theme}>
     <Container component="main" maxWidth="xs">
       <div className={classes.paper}>
       <Typography variant="h2" component="h2">
-      CourseConnect
+        <img
+          src={Logo}
+          width="500"
+          height="150"
+          className="d-inline-block align-top"
+          alt="CourseConnect"
+        />
       </Typography>
         <Typography component="h1" variant="h4">
           Sign in
@@ -111,5 +133,7 @@ export default function SignIn() {
         <Copyright />
       </Box>
     </Container>
+    </ThemeProvider>
+    </div>
   );
 }

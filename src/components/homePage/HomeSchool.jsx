@@ -7,6 +7,20 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import NativeSelect from '@material-ui/core/NativeSelect';
 import Typography from '@material-ui/core/Typography';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#2196f3',
+    },
+    secondary: {
+      main: '#4791db',
+    },
+  },
+});
+
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
@@ -54,6 +68,7 @@ function HomeSchool(props){
 
     return(
         <div style={{textAlign: 'center', marginTop: '3%'}}>
+        <ThemeProvider theme={theme}>
         <Typography variant="h1" component="h2">
         {school}
         </Typography>
@@ -77,6 +92,7 @@ function HomeSchool(props){
           <option value={"Cal Poly"}>Cal Poly</option>
         </Select>
       </FormControl>
+      </ThemeProvider>
     </div>);
   }
   export default HomeSchool;

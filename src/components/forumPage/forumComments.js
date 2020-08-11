@@ -140,35 +140,37 @@ const forumComments = [
         id: 17,
         questionType: "major",
         questionID: 1,
-        username: "",
-        date: "",
-        comment: "",
+        username: "Ribbot",
+        date: "5/19/2020",
+        comment: "While I do agree that a majority of bioengineers go to graduate school since it is a bit of a niche field, you should definitely consider if you would enjoy the mechE curriculum. A lot of mechE's are able to work in bioE fields since it's much easier for employers to teach mechE's bio as opposed to the technical engineering skills you acquire as a mechE",
     },
     {
         id: 18,
         questionType: "major",
         questionID: 1,
-        username: "",
-        date: "",
-        comment: "",
+        username: "Blathers",
+        date: "5/20/2020",
+        comment: "I agree with Ribbot. First consider whether you enjoy the mechE curriculum, it's quite different and focuses much less on thermodynamics than the bioE curriculum does. Also, what are your reasons for avoiding grad school? Grad school could be a great option for you if that's what you want",
     },
-    //comments for question 2 of major tab
     {
         id: 19,
         questionType: "major",
-        questionID: 2,
-        username: "",
-        date: "",
-        comment: "",
+        questionID: 1,
+        username: "boopboopbeep",
+        date: "5/21/2020",
+        comment: "Depending on what you want to go into in the bioE field (genetic engineering, medical devices, etc.) the necessity of grad school will differ. If you want to do genetic engineering where most of the work is in research, a PhD may be required.",
+
     },
     {
         id: 20,
         questionType: "major",
-        questionID: 2,
-        username: "",
-        date: "",
-        comment: "",
+        questionID: 1,
+        username: "Caroline666",
+        date: "5/21/2020",
+        comment:"mechE will suck the life out of you don't switch if you like to feel alive.",
+
     },
+    //comments for question 2 of major tab
     {
         id: 21,
         questionType: "major",
@@ -177,9 +179,25 @@ const forumComments = [
         date: "",
         comment: "",
     },
-    //comments for question 3 of major tab
     {
         id: 22,
+        questionType: "major",
+        questionID: 2,
+        username: "",
+        date: "",
+        comment: "",
+    },
+    {
+        id: 23,
+        questionType: "major",
+        questionID: 2,
+        username: "",
+        date: "",
+        comment: "",
+    },
+    //comments for question 3 of major tab
+    {
+        id: 24,
         questionType: "major",
         questionID: 3,
         username: "",
@@ -188,22 +206,6 @@ const forumComments = [
     },
 
     //comments for question 1 of social tab
-    {
-        id: 23,
-        questionType: "social",
-        questionID: 1,
-        username: "",
-        date: "",
-        comment: "",
-    },
-    {
-        id: 24,
-        questionType: "social",
-        questionID: 1,
-        username: "",
-        date: "",
-        comment: "",
-    },
     {
         id: 25,
         questionType: "social",
@@ -228,9 +230,25 @@ const forumComments = [
         date: "",
         comment: "",
     },
-    //comments for question 2 of social tab
     {
         id: 28,
+        questionType: "social",
+        questionID: 1,
+        username: "",
+        date: "",
+        comment: "",
+    },
+    {
+        id: 29,
+        questionType: "social",
+        questionID: 1,
+        username: "",
+        date: "",
+        comment: "",
+    },
+    //comments for question 2 of social tab
+    {
+        id: 30,
         questionType: "social",
         questionID: 2,
         username: "",
@@ -238,7 +256,7 @@ const forumComments = [
         comment: "",
     },
     {
-        id: 29,
+        id: 31,
         questionType: "social",
         questionID: 2,
         username: "",

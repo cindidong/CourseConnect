@@ -10,6 +10,20 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Typography from '@material-ui/core/Typography';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#2196f3',
+    },
+    secondary: {
+      main: '#4791db',
+    },
+  },
+});
+
 
 export default function FinalReviewForm() {
     const [open, setOpen] = React.useState(false);
@@ -36,6 +50,7 @@ export default function FinalReviewForm() {
   
     return (
       <div>
+      <ThemeProvider theme={theme}>
         <ButtonGroup
           orientation="vertical"
           color="primary"
@@ -70,6 +85,7 @@ export default function FinalReviewForm() {
             </Button>
           </DialogActions>
         </Dialog>
+        </ThemeProvider>
       </div>
     );
   }

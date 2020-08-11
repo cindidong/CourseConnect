@@ -15,7 +15,13 @@ function NavBar() {
         <Navbar className='navBar' variant="light" expand="lg">
         <Container>
             <Navbar.Brand href="#home">
-              CourseConnect
+            <img
+              src={Logo}
+              width="150"
+              height="40"
+              className="d-inline-block align-top"
+              alt="CourseConnect"
+            />
             </Navbar.Brand>
             </Container>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />

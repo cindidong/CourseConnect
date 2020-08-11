@@ -14,6 +14,21 @@ import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+import Logo from './logo.png';
+
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#1976d2',
+    },
+    secondary: {
+      main: '#4791db',
+    },
+  },
+});
 
 function Copyright() {
   return (
@@ -52,10 +67,17 @@ export default function SignUp() {
   const classes = useStyles();
 
   return (
+    <ThemeProvider theme={theme}>
     <Container component="main" maxWidth="xs">
       <div className={classes.paper}>
         <Typography variant="h2" component="h2">
-        CourseConnect
+        <img
+          src={Logo}
+          width="500"
+          height="150"
+          className="d-inline-block align-top"
+          alt="CourseConnect"
+        />
       </Typography>
         <Typography component="h1" variant="h4">
           Sign up
@@ -126,5 +148,6 @@ export default function SignUp() {
         <Copyright />
       </Box>
     </Container>
+    </ThemeProvider>
   );
 }
