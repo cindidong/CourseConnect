@@ -1,7 +1,18 @@
 const forumQuestions = [
-    //questions in general tab
+    //questions for major tab, i.e should I switch majors, how is staff for this major
     {
       id: 1,
+      questionType: "major",
+      questionID: 1,
+      username: "angrybirds",
+      date: "5/19/2020",
+      question: "Should I switch to MechE to avoid going to grad school as a current bioE? ",
+      description: "I'm currently a 2nd year bioE student and I realized I really do not want to grad school. I've heard from upperclassmen/graduates that bioE's have to go to grad school. Is that true? Should I switch to mechE instead to have a less niche major?",
+    },
+
+    //questions in general tab
+    {
+      id: 2,
       questionType: "general",
       questionID: 1,
       username: "angrybirds",
@@ -10,7 +21,7 @@ const forumQuestions = [
       description: "I'm just trying to save some money so any information helps!",
     },
     {
-      id: 2,
+      id: 3,
       questionType: "general",
       questionID: 2,
       username: "princesspeach",
@@ -21,7 +32,7 @@ const forumQuestions = [
 
     //questions for classes/class schedule tab
     {
-      id: 3,
+      id: 4,
       questionType: "classes",
       questionID: 1,
       username: "bowser2751",
@@ -30,7 +41,7 @@ const forumQuestions = [
       description: "I'm going to be taking math 60 with Gehret and math 32B with Harrop-Griffiths, I've heard these classes are really difficult but it works really well with my schedule? Can anyone attest to how doable this is going to be?",
     },
     {
-      id: 4,
+      id: 5,
       questionType: "classes",
       questionID: 2,
       username: "isabelle_thedog",
@@ -39,7 +50,7 @@ const forumQuestions = [
       description: "i’m enrolling this week and I’m trying to plan my classes and the ls7a lecture that works best w my schedule is w pires and mcevoy. i cant find any good things about pires and personally i’d much rather take the class w maloy. ik the class is essentially the same but i really want to do well in this class and so will i still have a chance to do fine in pires class or should i try my best to be w maloy",
     },
     {
-      id: 5,
+      id: 6,
       questionType: "classes",
       questionID: 3,
       username: "konkeydong",
@@ -48,7 +59,7 @@ const forumQuestions = [
       description: "Hi everyone! I was wondering if anyone knew of a four unit prerecorded class that is available during summer session C? I am having a lot of doctor’s appointments currently that are extremely unpredictable which is hard for a class that I have to be live on zoom for. I don’t mind having to attend a lab or anything like that.",
     },
     {
-      id: 6,
+      id: 7,
       questionType: "classes",
       questionID: 4,
       username: "ugandanknuckles",
@@ -59,15 +70,6 @@ const forumQuestions = [
 
     //questions for major tab, i.e should I switch majors, how is staff for this major
     {
-      id: 7,
-      questionType: "major",
-      questionID: 1,
-      username: "angrybirds",
-      date: "5/19/2020",
-      question: "Should I switch to MechE to avoid going to grad school as a current bioE? ",
-      description: "I'm currently a 2nd year bioE student and I realized I really do not want to grad school. I've heard from upperclassmen/graduates that bioE's have to go to grad school. Is that true? Should I switch to mechE instead to have a less niche major?",
-    },
-    {
       id: 8,
       questionType: "major",
       questionID: 2,
@@ -77,7 +79,7 @@ const forumQuestions = [
       description: "I want to double major in Neuroscience and Psychobiology and I want to know how many electives I can take that'll fulfill requirements for both majors at the same time. I remember seeing somewhere that this number is 2? Can someone confirm?",
     },
     {
-      id: 5,
+      id: 9,
       questionType: "major",
       questionID: 3,
       username: "tomtomtimtim",
@@ -88,7 +90,7 @@ const forumQuestions = [
     
     //questions for social tab
     {
-      id: 6,
+      id: 10,
       questionType: "social",
       questionID: 1,
       username: "sonichedgehog77",
@@ -97,7 +99,7 @@ const forumQuestions = [
       description: "Just curious. I always envied people that said that they were ambidextrous or left-handed because it's such a simple and cool thing to say. I never really had a go-to and would usually end up coming up with mine on the spot but I'm curious to hear if anyone has some defaults.",
     },
     {
-      id: 7,
+      id: 11,
       questionType: "social",
       questionID: 2,
       username: "g00mba",

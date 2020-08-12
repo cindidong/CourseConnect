@@ -14,6 +14,7 @@ function ForumContentSpilt(props)
         <div className="Pane1">
             <ForumSidebar 
               changeMajor={props.changeMajor}
+              tabName={props.tabName}
             />
         </div>
         <div className="Pane2">

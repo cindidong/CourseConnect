@@ -93,26 +93,31 @@ function TabsForum(){
         <TabPanel value={value} index={0}>
           <ForumContentSpilt 
           changeMajor={false}
+          tabName={"home"}
           />
         </TabPanel>
         <TabPanel value={value} index={1}>
           <ForumContentSpilt 
             changeMajor={false}
+            tabName={"general"}
             />
         </TabPanel>
         <TabPanel value={value} index={2}>
           <ForumContentSpilt 
             changeMajor={true}
+            tabName={"classes"}
             />
         </TabPanel>
         <TabPanel value={value} index={3}>
           <ForumContentSpilt 
             changeMajor={true}
+            tabName={"major"}
             />
         </TabPanel>
         <TabPanel value={value} index={4}>
           <ForumContentSpilt 
             changeMajor={false}
+            tabName={"social"}
             />
         </TabPanel>
         </ThemeProvider>
