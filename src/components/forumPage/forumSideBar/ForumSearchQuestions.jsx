@@ -17,12 +17,19 @@ import Chip from '@material-ui/core/Chip';
 import Box from '@material-ui/core/Box';
 
 function ProfInfo(props){
+    var str = props.description;
+    if (props.description.length > 100)
+    {
+        str = props.description.substring(0, 100);
+        str = str + "...";
+    }
     return(
         <div>
         <ListGroup.Item action onClick={() => {props.changeProfName("nachenberg")}}>
             <Media>
             <Media.Body>
                 <h5>{props.question}</h5>
+                <p>{str}</p>
             </Media.Body>
             </Media>
         </ListGroup.Item>
