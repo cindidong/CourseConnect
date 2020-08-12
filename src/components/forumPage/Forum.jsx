@@ -5,6 +5,7 @@ import Box from '@material-ui/core/Box';
 import TabsForum from './TabsForum.jsx'
 import ForumSidebar from './forumSideBar/ForumSidebar.jsx'
 import Divider from '@material-ui/core/Divider';
+import AddQuestion from './addQuestion/AddQuestion.jsx'
 
 function Forum(){
     return(

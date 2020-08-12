@@ -12,6 +12,7 @@ import SplitPane, { Pane } from 'react-split-pane';
 import ForumContentSpilt from './ForumContentSpilt.jsx'
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
+import AddQuestion from './addQuestion/AddQuestion.jsx'
 
 const theme = createMuiTheme({
   palette: {

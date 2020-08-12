@@ -44,9 +44,12 @@ function ForumQuestion(props) {
             I'm currently a 2nd year bioE student and I realized I really do not want to grad school. I've heard from upperclassmen/graduates that bioE's have to go to grad school. Is that true? Should I switch to mechE instead to have a less niche major?
         </Typography>
       </CardContent>
+      <Box display="flex" justifyContent="flex-end">
       <CardActions>
         <Button size="small">Reply</Button>
+        <Button size="small">Follow</Button>
       </CardActions>
+      </Box>
     </Card>
     </div>);
 }
