@@ -7,6 +7,10 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import './NavBar.css';
 import Logo from './logo.png';
+import Home from './homePage/Home.jsx'
+import Forum from './forumPage/Forum.jsx'
+import ReviewFinal from './reviewPage/ReviewFinal'
+//import { LinkContainer } from 'react-router-bootstrap';
 
 
 function NavBar() {
@@ -14,7 +18,7 @@ function NavBar() {
       //bg={{backgroundColor: '#c3e5ff'}} variant="light"
         <Navbar className='navBar' variant="light" expand="lg">
         <Container>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="#">
             <img
               src={Logo}
               width="150"
@@ -23,7 +27,7 @@ function NavBar() {
               alt="CourseConnect"
             />
             </Navbar.Brand>
-            </Container>
+          </Container>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Container>
             <Navbar.Collapse id="basic-navbar-nav">

@@ -8,6 +8,15 @@ import Chip from '@material-ui/core/Chip';
 
 
 function SingleReview(props) {
+    var tag = 'Hard Class Hard Teacher';
+    if (props.prof === 'Eggert')
+    {
+        tag = 'Hard Class Hard Teacher';
+    }
+    else if (props.prof === 'Stahl')
+    {
+        tag = 'Hard Class Easy Teacher';
+    }
     return (
     <div>
     <Card>
@@ -32,11 +41,11 @@ function SingleReview(props) {
             <Card.Text>{props.paragraph}</Card.Text>
             <div>
                 <Box display="flex" flexWrap="wrap">
-                    <Chip label="Grade: {props.grade}" variant="outlined" />
-                    <Chip label="Would Take Again: {props.takeAgain}" variant="outlined" />
-                    <Chip label="Materials: {props.materials}" variant="outlined" />
-                    <Chip label="Time Commitment: {props.time}" variant="outlined" />
-                    <Chip label="Hard Class Easy Teacher" variant="outlined" />
+                    <Chip label={props.grade} variant="outlined" />
+                    <Chip label={props.takeAgain} variant="outlined" />
+                    <Chip label={props.materials} variant="outlined" />
+                    <Chip label={props.time} variant="outlined" />
+                    <Chip label={tag} variant="outlined" />
                 </Box>
             </div>
         </Card.Body>

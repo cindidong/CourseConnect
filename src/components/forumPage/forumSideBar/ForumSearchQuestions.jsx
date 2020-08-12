@@ -23,21 +23,21 @@ function ProfInfo(props){
             <ListGroup.Item action onClick={() => {props.changeProfName("nachenberg")}}>
                 <Media>
                 <Media.Body>
-                    <h4>what classes should I avoid as a cs major?</h4>
+                    <h5>Should I switch to MechE to avoid going to grad school as a current bioE?</h5>
                 </Media.Body>
                 </Media>
             </ListGroup.Item>
             <ListGroup.Item action onClick={() => {props.changeProfName("stahl")}}>
                 <Media>
                 <Media.Body>
-                    <h4>stahl</h4>
+                    <h5>Cross-Major electives</h5>
                 </Media.Body>
                 </Media>
             </ListGroup.Item>
             <ListGroup.Item action onClick={() => {props.changeProfName("eggert")}}>
                 <Media>
                 <Media.Body>
-                    <h4>eggert</h4>
+                    <h5>Do you feel uncomfortable as an engineering major? What are the engineering school vibes for a female latina engineer?</h5>
                 </Media.Body>
                 </Media>
             </ListGroup.Item>

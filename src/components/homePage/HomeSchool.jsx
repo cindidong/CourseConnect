@@ -69,7 +69,7 @@ function HomeSchool(props){
     return(
         <div style={{textAlign: 'center', marginTop: '3%'}}>
         <ThemeProvider theme={theme}>
-        <Typography variant="h1" component="h2">
+        <Typography variant="h1" component="h1">
         {school}
         </Typography>
         <FormControl className={classes.formControl}>

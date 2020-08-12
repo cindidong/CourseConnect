@@ -56,8 +56,8 @@ export default function FinalReviewForm() {
           color="primary"
           aria-label="vertical outlined primary button group"
         >
-          <Button onClick={handleClickOpen('body')}>Submit Review</Button>
-          <Button onClick={handleClickOpen('paper')}>Groupchat</Button>
+          <Button onClick={handleClickOpen('paper')}>Submit Review</Button>
+          <Button onClick={handleClickOpen('body')}>Groupchat</Button>
         </ButtonGroup>
         <Dialog
           open={open}

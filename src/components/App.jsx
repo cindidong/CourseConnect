@@ -9,6 +9,8 @@ import HomeCards from './homePage/HomeCards.jsx'
 import Home from './homePage/Home.jsx'
 import Forum from './forumPage/Forum.jsx'
 import SubmitReviewForm from './reviewSubmission/SubmitReviewForm.jsx'
+import { BrowserRouter } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,7 +18,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 var isLoggedIn = false;
 
 function App(){
-    return(<div>{isLoggedIn ? <Home /> : <SignIn />}</div>);
+    return(
+    <div>
+        {isLoggedIn ? <Home /> : <SignIn />}
+    </div>);
 }
 
 export default App;

@@ -8,21 +8,23 @@ import Box from '@material-ui/core/Box';
 import Chip from '@material-ui/core/Chip';
 import SplitPane, { Pane } from 'react-split-pane';
 import Divider from '@material-ui/core/Divider';
-
+import Frog2 from './frog2.png';
+import Frog3 from './frog3.png';
+import Frog4 from './frog4.png';
 
 //using react bootstrap cards, can nest
 function ForumSubComment(props) {
   return (
     <div>
     <Divider/>
-    <Media style={{ marginTop: "1%"}}>
+    <Media style={{ marginTop: "1%", marginLeft: "1%"}}>
         <img
-        width={30}
-        height={30}
-        className="mr-3"
-        src="holder.js/64x64"
-        alt="pfp"
-        />
+          width={40}
+          height={40}
+          className="mr-3"
+          src={Frog2}
+          alt="pfp"
+          />
       <Media.Body>
       <Box display="flex">
           <Box alignSelf='center' flexGrow={1}>
@@ -41,11 +43,11 @@ function ForumSubComment(props) {
       </Typography>
       <Media style={{ marginTop: "1%"}}>
       <img
-        width={30}
-        height={30}
-        className="mr-3"
-        src="holder.js/64x64"
-        alt="pfp"
+          width={40}
+          height={40}
+          className="mr-3"
+          src={Frog3}
+          alt="pfp"
         />
       <Media.Body>
       <Box display="flex">
@@ -67,14 +69,14 @@ function ForumSubComment(props) {
   </Media>
       </Media.Body>
   </Media>
-  <Media style={{ marginTop: "1%"}}>
-        <img
-        width={30}
-        height={30}
-        className="mr-3"
-        src="holder.js/64x64"
-        alt="pfp"
-        />
+  <Media style={{ marginTop: "1%", marginLeft: "1%"}}>
+    <img
+      width={40}
+      height={40}
+      className="mr-3"
+      src={Frog4}
+      alt="pfp"
+      />
       <Media.Body>
       <Box display="flex">
           <Box alignSelf='center' flexGrow={1}>
@@ -93,7 +95,7 @@ function ForumSubComment(props) {
       </Typography>
       </Media.Body>
   </Media>
-  <Media style={{ marginTop: "1%"}}>
+  <Media style={{ marginTop: "1%", marginLeft: "1%"}}>
         <img
         width={30}
         height={30}

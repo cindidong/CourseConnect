@@ -9,6 +9,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
+import Frog1 from './frog1.png';
 
 function ForumQuestion(props) {
     return (
@@ -18,32 +19,29 @@ function ForumQuestion(props) {
         <Box display="flex">
             <Box>
                 <img
-                width={64}
-                height={64}
+                width={40}
+                height={40}
                 className="mr-3"
-                src="holder.js/64x64"
+                src={Frog1}
                 alt="pfp"
                 />
             </Box>
             <Box alignSelf='center' flexGrow={1}>
                 <Typography color="textSecondary" gutterBottom>
-                    username
+                    angrybirds
                 </Typography>
             </Box>
             <Box p={1}>
                 <Typography color="textSecondary" gutterBottom>
-                    date
+                    5/19/2020
                 </Typography>
             </Box>
         </Box>
-        <Typography variant="h3" component="h2" style={{ marginBottom: "4%"}}>
-        what classes should I avoid as a cs major?
+        <Typography variant="h4" component="h2" style={{ marginBottom: "4%"}}>
+            Should I switch to MechE to avoid going to grad school as a current bioE?
         </Typography>
         <Typography variant="body1" component="p">
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-            ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
-            tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
-            Donec lacinia congue felis in faucibus.
+            I'm currently a 2nd year bioE student and I realized I really do not want to grad school. I've heard from upperclassmen/graduates that bioE's have to go to grad school. Is that true? Should I switch to mechE instead to have a less niche major?
         </Typography>
       </CardContent>
       <CardActions>

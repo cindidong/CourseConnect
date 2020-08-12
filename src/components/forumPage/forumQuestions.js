@@ -63,7 +63,7 @@ const forumQuestions = [
       questionType: "major",
       questionID: 1,
       username: "angrybirds",
-      date: "4/27/2020",
+      date: "5/19/2020",
       question: "Should I switch to MechE to avoid going to grad school as a current bioE? ",
       description: "I'm currently a 2nd year bioE student and I realized I really do not want to grad school. I've heard from upperclassmen/graduates that bioE's have to go to grad school. Is that true? Should I switch to mechE instead to have a less niche major?",
     },
