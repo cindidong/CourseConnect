@@ -9,7 +9,9 @@ import NativeSelect from '@material-ui/core/NativeSelect';
 import Typography from '@material-ui/core/Typography';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
+import CalPoly from './calpoly.png';
 import UCLA from './ucla.png';
+
 
 const theme = createMuiTheme({
   palette: {
@@ -68,10 +70,16 @@ function HomeSchool(props){
     };
 
     return(
-        <div style={{textAlign: 'center', marginTop: '3%'}}>
+        <div style={{textAlign: 'center', marginTop: '1%'}}>
         <ThemeProvider theme={theme}>
         <Typography variant="h1" component="h1">
-        {school}
+          <img
+            width={300}
+            height={200}
+            className="mr-3"
+            src={CalPoly}
+            alt="pfp"
+          />
         </Typography>
         <FormControl className={classes.formControl}>
         <InputLabel htmlFor="school-native-simple">Go to a different college?</InputLabel>
@@ -89,7 +97,6 @@ function HomeSchool(props){
           <option value={"UCB"}>UCB</option>
           <option value={"UCR"}>UCR</option>
           <option value={"UCI"}>UCI</option>
-          <option value={"Virginia Tech"}>Virginia Tech</option>
           <option value={"Cal Poly"}>Cal Poly</option>
         </Select>
       </FormControl>

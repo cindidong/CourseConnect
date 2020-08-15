@@ -14,7 +14,7 @@ import Container from '@material-ui/core/Container';
 import Forum from '../forumPage/Forum.jsx';
 import ForumIcon from './forumIcon.png';
 import ReviewIcon from './reviewIcon.png';
-
+import '../NavBar.css';
 
 const useStyles = makeStyles({
   root: {
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
 export default function HomeCards() {
   const classes = useStyles();
   return (
-    <div style={{ marginTop: "6%"}}>
+    <div style={{ marginTop: "3%"}}>
     <Box display="flex" justifyContent="space-evenly">
     <Card className={classes.root} onClick={() => { return(ReactDOM.render(<ReviewFinal />, document.getElementById('root'))) }}>
       <CardActionArea>
@@ -40,7 +40,7 @@ export default function HomeCards() {
           title="Reviews"
         />
         <CardContent className={classes.cardBottom} >
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography className='homeCardBottom' align="center" gutterBottom variant="h5" component="h2">
             Professor Reviews
           </Typography>
         </CardContent>
@@ -56,7 +56,7 @@ export default function HomeCards() {
           title="Forum"
         />
         <CardContent className={classes.cardBottom} >
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography align="center" gutterBottom variant="h5" component="h2">
             Forum
           </Typography>
         </CardContent>
