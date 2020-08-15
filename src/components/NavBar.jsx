@@ -19,6 +19,7 @@ import Divider from '@material-ui/core/Divider';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import ListItemText from '@material-ui/core/ListItemText';
 import { withStyles } from '@material-ui/core/styles';
+import Arrow from './dropdown.png'
 
 //onClick={() => { return(ReactDOM.render(<Home />, document.getElementById('root'))) }}
 
@@ -43,11 +44,14 @@ const theme = createMuiTheme({
 });
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
+  logoButton: {
+    paddingLeft: '0',
   },
-  title: {
-    flexGrow: 1,
+  questionsButton: {
+    marginBottom: "3%",
+  },
+  signOutButton: {
+    marginTop: "1%",
   },
 }));
 
@@ -86,11 +90,12 @@ function NavBar() {
   };
   return (
     <ThemeProvider theme={theme}>
-    <div className={classes.root}>
+    <Box display="flex">
     <AppBar position="static">
       <Toolbar>
+      <Box flexGrow={1}>
       <Button 
-        className={classes.title}
+        className={classes.logoButton}
         onClick={() => { return(ReactDOM.render(<Home />, document.getElementById('root'))) }}
         color="inherit">
         <img
@@ -101,6 +106,7 @@ function NavBar() {
             alt="CourseConnect"
         />
         </Button>
+        </Box>
         <Button 
         onClick={() => { return(ReactDOM.render(<ReviewFinal />, document.getElementById('root'))) }}
         color="inherit">Reviews</Button>
@@ -110,6 +116,13 @@ function NavBar() {
         <div>
           <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
             My Profile
+            <img
+            src={Arrow}
+            width="20"
+            height="20"
+            className="d-inline-block align-top"
+            alt="CourseConnect"
+          />
           </Button>
           <StyledMenu
             id="simple-menu"
@@ -120,14 +133,14 @@ function NavBar() {
           >
             <MenuItem onClick={() => { return(ReactDOM.render(<Home />, document.getElementById('root'))) }}>Edit Profile</MenuItem>
             <MenuItem onClick={() => { return(ReactDOM.render(<Home />, document.getElementById('root'))) }}>My Reviews</MenuItem>
-            <MenuItem onClick={() => { return(ReactDOM.render(<Home />, document.getElementById('root'))) }}>My Questions</MenuItem>
+            <MenuItem className={classes.questionsButton} onClick={() => { return(ReactDOM.render(<Home />, document.getElementById('root'))) }}>My Questions</MenuItem>
             <Divider/>
-            <MenuItem onClick={() => { return(ReactDOM.render(<SignIn />, document.getElementById('root'))) }}>Sign Out</MenuItem>
+            <MenuItem className={classes.signOutButton} onClick={() => { return(ReactDOM.render(<SignIn />, document.getElementById('root'))) }}>Sign Out</MenuItem>
           </StyledMenu>
         </div>
       </Toolbar>
     </AppBar>
-  </div>
+  </Box>
   </ThemeProvider>
   );
 }
