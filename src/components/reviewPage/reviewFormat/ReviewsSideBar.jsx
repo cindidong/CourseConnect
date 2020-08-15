@@ -5,15 +5,15 @@ import reviewData from './reviewData.js'
 function colorSelector(rating){
   if (parseInt(rating) > 3.9)
   {
-      return "green";
+      return "#009c44";
   }
   else if (parseInt(rating) < 2.5)
   {
-    return "red";
+    return "#ff4747";
   }
   else
   {
-      return "yellow";
+      return "#fab900";
   }
 }
 

@@ -13,52 +13,33 @@ import Typography from '@material-ui/core/Typography';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+      color: 'green',
+    },
+  }));
+
 
 function ProfInfo(props){
+    const classes = useStyles();
     return(
         <div>
-        <ListGroup defaultActiveKey="#link1">
-            <ListGroup.Item action onClick={() => {props.changeProfName("Nachenberg")}}>
-                <Media>
-                <Media.Body>
-                <Typography variant="h5" component="h2">
-                    Nachenberg
-                </Typography>
-                <Typography variant="h6" component="h2">
-                    CS 32
-                </Typography>
-                </Media.Body>
-                <p>4.5</p>
-                </Media>
-            </ListGroup.Item>
-            <ListGroup.Item action onClick={() => {props.changeProfName("Stahl")}}>
-                <Media>
-                <Media.Body>
-                <Typography variant="h5" component="h2">
-                    Stahl
-                </Typography>
-                <Typography variant="h6" component="h2">
-                    CS 32
-                </Typography>
-                </Media.Body>
-                <p>3.5</p>
-                </Media>
-            </ListGroup.Item>
-            <ListGroup.Item action onClick={() => {props.changeProfName("Eggert")}}>
-                <Media>
-                <Media.Body>
-                <Typography variant="h5" component="h2">
-                    Eggert
-                </Typography>
-                <Typography variant="h6" component="h2">
-                    CS 32
-                </Typography>
-                </Media.Body>
-                <p>3.5</p>
-                </Media>
-            </ListGroup.Item>
-        </ListGroup>
-    </div>);
+        <ListGroup.Item action onClick={() => {props.changeProfName(props.name)}}>
+            <Media>
+            <Media.Body>
+            <Typography variant="h5" component="h2">
+                {props.name}
+            </Typography>
+            <Typography variant="h6" component="h2">
+                {props.class}
+            </Typography>
+            </Media.Body>
+            <p className={classes.root} >{props.rating}</p>
+            </Media>
+        </ListGroup.Item>
+        </div>);
   }
 
 

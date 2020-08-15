@@ -10,8 +10,29 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Frog1 from './frog1.png';
+import QuestionAddComment from './QuestionAddComment.jsx'
+import QuestionReplyButton from './QuestionReplyButton.jsx'
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+      width: '100%',
+      display: "flex",
+      justifyContent: "flex-end",
+    },
+  }));
+
+
 
 function ForumQuestion(props) {
+    const classes = useStyles();
+    const [pressed, setPressed] = React.useState(false);
+
+    const handleVisibility = () => {
+        setPressed((prevPressed) => !prevPressed);
+    };
+    //{pressed ? <QuestionAddComment handleVisibility={handleVisibility} /> : <QuestionReplyButton handleVisibility={handleVisibility}/>}
+
     return (
     <div>
     <Card>
@@ -44,12 +65,9 @@ function ForumQuestion(props) {
             I'm currently a 2nd year bioE student and I realized I really do not want to grad school. I've heard from upperclassmen/graduates that bioE's have to go to grad school. Is that true? Should I switch to mechE instead to have a less niche major?
         </Typography>
       </CardContent>
-      <Box display="flex" justifyContent="flex-end">
-      <CardActions>
-        <Button size="small">Reply</Button>
-        <Button size="small">Follow</Button>
+      <CardActions className={classes.root}>
+        {pressed ? <QuestionAddComment handleVisibility={handleVisibility} /> : <QuestionReplyButton handleVisibility={handleVisibility}/>}
       </CardActions>
-      </Box>
     </Card>
     </div>);
 }

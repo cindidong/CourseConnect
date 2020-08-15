@@ -9,6 +9,7 @@ import NativeSelect from '@material-ui/core/NativeSelect';
 import Typography from '@material-ui/core/Typography';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
+import UCLA from './ucla.png';
 
 const theme = createMuiTheme({
   palette: {
