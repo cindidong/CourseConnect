@@ -13,17 +13,9 @@ import Typography from '@material-ui/core/Typography';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-      color: 'green',
-    },
-  }));
 
 
 function ProfInfo(props){
-    const classes = useStyles();
     return(
         <div>
         <ListGroup.Item action onClick={() => {props.changeProfName(props.name)}}>
@@ -36,7 +28,7 @@ function ProfInfo(props){
                 {props.class}
             </Typography>
             </Media.Body>
-            <p className={classes.root} >{props.rating}</p>
+            <p style={{color: props.color, fontSize: '20px' }}>{props.rating}</p>
             </Media>
         </ListGroup.Item>
         </div>);

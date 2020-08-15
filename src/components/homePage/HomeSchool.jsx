@@ -34,6 +34,8 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
+  //{school} accesses the value={"UCLA"} part
+
 function HomeSchool(props){
     const classes = useStyles();
     const [school, setSchool] = useState('UCLA');

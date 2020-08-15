@@ -38,13 +38,13 @@ const profData = [
     {
         id: 7,
         name: "Beren",
-        rating: "3.2",
+        rating: "1.6",
         class: "CS 32"
     },
     {
         id: 8,
         name: "Pham",
-        rating: "4.2",
+        rating: "3.2",
         class: "CS 32"
     },
     {
@@ -56,7 +56,7 @@ const profData = [
     {
         id: 10,
         name: "Burgin",
-        rating: "4.1",
+        rating: "1.8",
         class: "CS 32"
     }
 ]

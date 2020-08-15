@@ -76,7 +76,7 @@ export default function SignIn() {
         />
       </Typography>
         <Typography component="h1" variant="h4">
-          Sign in
+          Sign In
         </Typography>
         <form className={classes.form} noValidate>
           <TextField

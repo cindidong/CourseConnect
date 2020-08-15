@@ -80,7 +80,7 @@ export default function SignUp() {
         />
       </Typography>
         <Typography component="h1" variant="h4">
-          Sign up
+          Sign Up
         </Typography>
         <form className={classes.form} noValidate>
           <Grid container spacing={2}>

@@ -31,7 +31,7 @@ function ClassesSideBar(props){
                     name={x.name}
                     rating={x.rating}
                     class={x.class}
-                    color={colorSelector(x.overallRating)}
+                    color={colorSelector(x.rating)}
                     changeProfName={props.changeProfName}
                 />))
             }
