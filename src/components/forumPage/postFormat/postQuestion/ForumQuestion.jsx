@@ -53,7 +53,7 @@ function ForumQuestion(props) {
                 </Typography>
             </Box>
             <Box p={1}>
-                <Typography color="textSecondary" gutterBottom>
+                <Typography variant="body2" color="textSecondary" gutterBottom>
                     5/19/2020
                 </Typography>
             </Box>

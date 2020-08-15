@@ -40,7 +40,7 @@ export default function HomeCards() {
           title="Reviews"
         />
         <CardContent className={classes.cardBottom} >
-          <Typography align="center" gutterBottom variant="h5" component="h2">
+          <Typography align="center" gutterBottom variant="h4">
             Professor Reviews
           </Typography>
         </CardContent>
@@ -56,7 +56,7 @@ export default function HomeCards() {
           title="Forum"
         />
         <CardContent className={classes.cardBottom} >
-          <Typography align="center" gutterBottom variant="h5" component="h2">
+          <Typography align="center" gutterBottom variant="h4">
             Forum
           </Typography>
         </CardContent>

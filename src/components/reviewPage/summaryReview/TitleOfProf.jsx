@@ -7,10 +7,10 @@ function TitleOfProf(props){
     <div>
     <Media>
         <Media.Body>
-            <Typography variant="h3" component="h2">
+            <Typography variant="h2">
                 {props.prof}
             </Typography>
-            <Typography variant="h4" component="h2">
+            <Typography variant="h3">
                 CS 32
             </Typography>
         </Media.Body>

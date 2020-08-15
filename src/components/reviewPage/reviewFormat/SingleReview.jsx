@@ -24,21 +24,31 @@ function SingleReview(props) {
         <Box display="flex" width="100%">
             <Box p={1} flexGrow={1}>
             <div className="title" style={{color: props.color, size: "70px"}}>
+            <Typography>
                 <Card.Title>{props.overallRating}</Card.Title>
+            </Typography>
             </div>
             </Box>
             <Box p={1}>
                 <div className = "review-topRight" style={{textAlign: "right"}}>
                 <Card.Subtitle className="mb-2 text-muted">
+                <Typography color="textSecondary" variant="body2">
                     Quarter Taken: {props.taken}
+                </Typography>
                 </Card.Subtitle>
                 <Card.Subtitle className="mb-2 text-muted">
+                <Typography color="textSecondary" variant="body2">
                     Date Submitted: {props.submitted}
+                </Typography>
                 </Card.Subtitle>
                 </div>
             </Box>
         </Box>
-            <Card.Text>{props.paragraph}</Card.Text>
+            <Card.Text>
+            <Typography variant="body1">
+            {props.paragraph}
+            </Typography>
+            </Card.Text>
             <div>
                 <Box display="flex" flexWrap="wrap">
                     <Chip label={props.grade} variant="outlined" />

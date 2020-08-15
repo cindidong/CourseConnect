@@ -2,10 +2,12 @@ import React from 'react';
 import Rating from '@material-ui/lab/Rating';
 import Box from '@material-ui/core/Box';
 import Table from 'react-bootstrap/Table'
+import '../../NavBar.css';
+
 
 function RatingsBar(){
     return(
-        <div>
+        <div className="navBarText">
         <Table striped bordered hover>
             <tr>
                 <td>Overall</td>

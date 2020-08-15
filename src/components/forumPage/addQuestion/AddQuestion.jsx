@@ -15,17 +15,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#2196f3',
-    },
-    secondary: {
-      main: '#4791db',
-    },
-  },
-});
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -69,7 +59,6 @@ function AddQuestion(){
     };
     return(
         <div>
-        <ThemeProvider theme={theme}>
         <Fab className={classes.fab} color="primary" aria-label="add" onClick={handleClickOpen}>
           +
         </Fab>
@@ -99,11 +88,19 @@ function AddQuestion(){
         </FormControl>
           <Form>
             <Form.Group controlId="exampleForm.ControlTextarea1">
-                <Form.Label>Question</Form.Label>
+                <Form.Label>
+                <Typography>
+                Question
+                </Typography>
+                </Form.Label>
                 <Form.Control as="textarea" rows="1" />
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlTextarea2">
-                <Form.Label>Description</Form.Label>
+                <Form.Label>
+                <Typography>
+                Description
+                </Typography>
+                </Form.Label>
                 <Form.Control as="textarea" rows="5" />
             </Form.Group>
         </Form>
@@ -117,8 +114,7 @@ function AddQuestion(){
           </Button>
         </DialogActions>
       </Dialog>
-      </ThemeProvider>
-        </div>);
+      </div>);
   }
 
   export default AddQuestion;

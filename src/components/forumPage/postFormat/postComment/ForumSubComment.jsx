@@ -62,7 +62,7 @@ function ForumSubComment(props) {
               </Typography>
           </Box>
           <Box p={1}>
-              <Typography color="textSecondary" gutterBottom>
+              <Typography variant="body2" color="textSecondary" gutterBottom>
                 5/19/2020
               </Typography>
           </Box>
@@ -87,7 +87,7 @@ function ForumSubComment(props) {
               </Typography>
           </Box>
           <Box p={1}>
-              <Typography color="textSecondary" gutterBottom>
+              <Typography variant="body2" color="textSecondary" gutterBottom>
                 5/20/2020
               </Typography>
           </Box>
@@ -116,7 +116,7 @@ function ForumSubComment(props) {
               </Typography>
           </Box>
           <Box p={1}>
-              <Typography color="textSecondary" gutterBottom>
+              <Typography variant="body2" color="textSecondary" gutterBottom>
                 5/21/2020
               </Typography>
           </Box>
@@ -143,7 +143,7 @@ function ForumSubComment(props) {
               </Typography>
           </Box>
           <Box p={1}>
-              <Typography color="textSecondary" gutterBottom>
+              <Typography variant="body2" color="textSecondary" gutterBottom>
                 5/21/2020
               </Typography>
           </Box>

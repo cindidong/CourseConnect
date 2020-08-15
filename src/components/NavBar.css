@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+.cardBottomText
+{
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+}
+
 .navBar {
     background-color: #c3e5ff;
 }
 
 .navBarText {
-    color: #ffffff;
+    font-family: 'Alata', sans-serif;
+    color: 'black';
 }

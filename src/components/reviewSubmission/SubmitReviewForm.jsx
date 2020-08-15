@@ -10,7 +10,30 @@ import reivewSubmissionData from './reivewSubmissionData.js'
 import tagNames from './tagNames.js'
 import SubmitReviewText from './SubmitReviewText';
 import textFieldData from './textFieldData.js'
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: [
+      '"Alata"',
+      'Roboto',
+      '"sans-serif"',
+      '"Helvetica Neue"',
+      'Arial',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+  },
+  palette: {
+    primary: {
+      main: '#2196f3',
+    },
+    secondary: {
+      main: '#4791db',
+    },
+  },
+});
 
 function SubmitReviewForm(){
     const [isClicked, setIsClicked] = React.useState(false);
@@ -29,6 +52,7 @@ function SubmitReviewForm(){
     };
     return(
       <div>
+      <ThemeProvider theme={theme}>
       {reivewSubmissionData.map( x => 
         (<SubmitReviewInfo
             key={x.id}
@@ -52,6 +76,7 @@ function SubmitReviewForm(){
             description={x.description}
           />))
         }
+      </ThemeProvider>
       </div>);
   }
   export default SubmitReviewForm;

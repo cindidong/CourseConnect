@@ -1,18 +1,8 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import Media from 'react-bootstrap/Media'
-import Paper from '@material-ui/core/Paper';
-import Divider from '@material-ui/core/Divider';
 import ListGroup from 'react-bootstrap/ListGroup'
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
+  
 
 
 function ProfInfo(props){
@@ -21,14 +11,14 @@ function ProfInfo(props){
         <ListGroup.Item action onClick={() => {props.changeProfName(props.name)}}>
             <Media>
             <Media.Body>
-            <Typography variant="h5" component="h2">
+            <Typography variant="h4">
                 {props.name}
             </Typography>
-            <Typography variant="h6" component="h2">
+            <Typography variant="h5">
                 {props.class}
             </Typography>
             </Media.Body>
-            <p style={{color: props.color, fontSize: '20px' }}>{props.rating}</p>
+            <Typography style={{color: props.color, fontSize: '20px' }}>{props.rating}</Typography>
             </Media>
         </ListGroup.Item>
         </div>);

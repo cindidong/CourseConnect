@@ -13,18 +13,6 @@ import CalPoly from './calpoly.png';
 import UCLA from './ucla.png';
 
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#2196f3',
-    },
-    secondary: {
-      main: '#4791db',
-    },
-  },
-});
-
-
 const useStyles = makeStyles((theme) => ({
     formControl: {
       minWidth: 350,
@@ -73,7 +61,6 @@ function HomeSchool(props){
 
     return(
         <div style={{textAlign: 'center', marginTop: '1%'}}>
-        <ThemeProvider theme={theme}>
         <Typography variant="h1" component="h1">
           <img
             width={300}
@@ -102,7 +89,6 @@ function HomeSchool(props){
           <option value={"Cal Poly"}>Cal Poly</option>
         </Select>
       </FormControl>
-      </ThemeProvider>
     </div>);
   }
   export default HomeSchool;

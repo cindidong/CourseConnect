@@ -14,16 +14,6 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import AddQuestion from './addQuestion/AddQuestion.jsx'
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: '#2196f3',
-    },
-    secondary: {
-      main: '#4791db',
-    },
-  },
-});
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -73,7 +63,6 @@ function TabsForum(){
     };
     return(
       <div>
-      <ThemeProvider theme={theme}>
         <Paper className={classes.root}>
             <Tabs
                 value={value}
@@ -121,7 +110,6 @@ function TabsForum(){
             tabName={"social"}
             />
         </TabPanel>
-        </ThemeProvider>
       </div>);
   }
   export default TabsForum;
