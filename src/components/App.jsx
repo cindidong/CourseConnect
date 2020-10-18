@@ -9,8 +9,8 @@ import HomeCards from './homePage/HomeCards.jsx'
 import Home from './homePage/Home.jsx'
 import Forum from './forumPage/Forum.jsx'
 import SubmitReviewForm from './reviewSubmission/SubmitReviewForm.jsx'
-import { BrowserRouter } from 'react-router-dom';
-import { Route, Switch } from 'react-router-dom';
+//import { BrowserRouter } from 'react-router-dom';
+//import { Route, Switch } from 'react-router-dom';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
